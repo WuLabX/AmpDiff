@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+*.out
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Python environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Training cache
+wandb/
+runs/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt

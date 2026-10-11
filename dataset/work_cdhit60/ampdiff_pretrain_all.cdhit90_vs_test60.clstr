@@ -1,0 +1,1531 @@
+>Cluster 0
+0	84aa, >seq_52|len=84... *
+1	11aa, >seq_8228|len=11... at 63.64%
+2	17aa, >seq_19201|len=17... at 64.71%
+>Cluster 1
+0	60aa, >seq_226|len=60... *
+1	13aa, >seq_13961|len=13... at 61.54%
+2	13aa, >seq_14216|len=13... at 61.54%
+3	15aa, >seq_15804|len=15... at 60.00%
+4	15aa, >seq_16763|len=15... at 60.00%
+5	15aa, >seq_17275|len=15... at 66.67%
+6	16aa, >seq_17510|len=16... at 75.00%
+7	16aa, >seq_18372|len=16... at 75.00%
+8	16aa, >seq_18569|len=16... at 75.00%
+9	16aa, >seq_18690|len=16... at 75.00%
+10	18aa, >seq_20068|len=18... at 66.67%
+11	18aa, >seq_21329|len=18... at 61.11%
+12	19aa, >seq_21444|len=19... at 63.16%
+13	19aa, >seq_21445|len=19... at 63.16%
+14	19aa, >seq_21535|len=19... at 68.42%
+15	19aa, >seq_21559|len=19... at 63.16%
+16	19aa, >seq_21585|len=19... at 63.16%
+17	19aa, >seq_21609|len=19... at 63.16%
+18	19aa, >seq_21618|len=19... at 63.16%
+19	19aa, >seq_21669|len=19... at 84.21%
+20	19aa, >seq_21711|len=19... at 63.16%
+21	19aa, >seq_21905|len=19... at 63.16%
+22	19aa, >seq_21908|len=19... at 68.42%
+23	19aa, >seq_21920|len=19... at 63.16%
+24	19aa, >seq_21944|len=19... at 63.16%
+25	19aa, >seq_21958|len=19... at 63.16%
+26	19aa, >seq_21969|len=19... at 68.42%
+27	19aa, >seq_22030|len=19... at 68.42%
+28	19aa, >seq_22094|len=19... at 63.16%
+29	19aa, >seq_22095|len=19... at 63.16%
+30	19aa, >seq_22395|len=19... at 63.16%
+31	23aa, >seq_31504|len=23... at 69.57%
+32	27aa, >seq_33870|len=27... at 70.37%
+33	27aa, >seq_33967|len=27... at 62.96%
+34	29aa, >seq_34781|len=29... at 68.97%
+35	29aa, >seq_35030|len=29... at 68.97%
+36	36aa, >seq_38396|len=36... at 61.11%
+37	39aa, >seq_39541|len=39... at 71.79%
+38	50aa, >seq_42426|len=50... at 100.00%
+39	55aa, >seq_43829|len=55... at 69.09%
+>Cluster 2
+0	53aa, >seq_209|len=53... *
+>Cluster 3
+0	51aa, >seq_10|len=51... *
+1	14aa, >seq_15458|len=14... at 71.43%
+2	19aa, >seq_21773|len=19... at 63.16%
+>Cluster 4
+0	46aa, >seq_230|len=46... *
+>Cluster 5
+0	45aa, >seq_24|len=45... *
+1	11aa, >seq_8269|len=11... at 63.64%
+2	12aa, >seq_9734|len=12... at 66.67%
+3	12aa, >seq_10214|len=12... at 66.67%
+4	13aa, >seq_12508|len=13... at 61.54%
+5	13aa, >seq_12692|len=13... at 61.54%
+6	13aa, >seq_12724|len=13... at 69.23%
+7	13aa, >seq_13269|len=13... at 61.54%
+8	13aa, >seq_13532|len=13... at 61.54%
+9	14aa, >seq_14864|len=14... at 71.43%
+10	14aa, >seq_15653|len=14... at 64.29%
+11	15aa, >seq_15882|len=15... at 60.00%
+12	15aa, >seq_16635|len=15... at 66.67%
+13	15aa, >seq_16949|len=15... at 60.00%
+14	16aa, >seq_17477|len=16... at 62.50%
+15	16aa, >seq_18328|len=16... at 68.75%
+16	18aa, >seq_20435|len=18... at 61.11%
+17	20aa, >seq_25788|len=20... at 100.00%
+>Cluster 6
+0	45aa, >seq_173|len=45... *
+1	18aa, >seq_19993|len=18... at 61.11%
+2	18aa, >seq_20976|len=18... at 66.67%
+3	35aa, >seq_37766|len=35... at 60.00%
+4	40aa, >seq_39750|len=40... at 60.00%
+5	45aa, >seq_41076|len=45... at 60.00%
+6	45aa, >seq_41141|len=45... at 91.11%
+7	45aa, >seq_41157|len=45... at 60.00%
+8	45aa, >seq_41207|len=45... at 62.22%
+9	45aa, >seq_41267|len=45... at 62.22%
+10	45aa, >seq_41305|len=45... at 84.44%
+11	45aa, >seq_41309|len=45... at 60.00%
+12	45aa, >seq_41339|len=45... at 60.00%
+>Cluster 7
+0	45aa, >seq_174|len=45... *
+1	18aa, >seq_20378|len=18... at 61.11%
+2	45aa, >seq_41227|len=45... at 60.00%
+>Cluster 8
+0	45aa, >seq_211|len=45... *
+>Cluster 9
+0	44aa, >seq_9|len=44... *
+>Cluster 10
+0	44aa, >seq_175|len=44... *
+1	34aa, >seq_37370|len=34... at 64.71%
+>Cluster 11
+0	44aa, >seq_267|len=44... *
+>Cluster 12
+0	44aa, >seq_268|len=44... *
+>Cluster 13
+0	42aa, >seq_79|len=42... *
+1	41aa, >seq_39988|len=41... at 60.98%
+2	41aa, >seq_40079|len=41... at 63.41%
+>Cluster 14
+0	42aa, >seq_165|len=42... *
+1	22aa, >seq_30669|len=22... at 72.73%
+2	37aa, >seq_39036|len=37... at 62.16%
+3	40aa, >seq_39905|len=40... at 90.00%
+>Cluster 15
+0	41aa, >seq_146|len=41... *
+1	23aa, >seq_31075|len=23... at 60.87%
+>Cluster 16
+0	40aa, >seq_0|len=40... *
+>Cluster 17
+0	40aa, >seq_6|len=40... *
+1	14aa, >seq_14788|len=14... at 71.43%
+2	14aa, >seq_15436|len=14... at 71.43%
+3	15aa, >seq_15929|len=15... at 60.00%
+4	15aa, >seq_16416|len=15... at 60.00%
+5	29aa, >seq_35173|len=29... at 75.86%
+6	36aa, >seq_38405|len=36... at 61.11%
+7	39aa, >seq_39471|len=39... at 71.79%
+8	39aa, >seq_39511|len=39... at 74.36%
+9	39aa, >seq_39689|len=39... at 61.54%
+10	39aa, >seq_39723|len=39... at 71.79%
+11	40aa, >seq_39760|len=40... at 65.00%
+12	40aa, >seq_39791|len=40... at 65.00%
+13	40aa, >seq_39802|len=40... at 70.00%
+14	40aa, >seq_39827|len=40... at 62.50%
+15	40aa, >seq_39828|len=40... at 62.50%
+16	40aa, >seq_39833|len=40... at 75.00%
+17	40aa, >seq_39845|len=40... at 60.00%
+18	40aa, >seq_39849|len=40... at 72.50%
+19	40aa, >seq_39907|len=40... at 70.00%
+>Cluster 18
+0	40aa, >seq_7|len=40... *
+>Cluster 19
+0	40aa, >seq_8|len=40... *
+>Cluster 20
+0	40aa, >seq_53|len=40... *
+>Cluster 21
+0	40aa, >seq_54|len=40... *
+>Cluster 22
+0	40aa, >seq_55|len=40... *
+>Cluster 23
+0	40aa, >seq_56|len=40... *
+1	37aa, >seq_38697|len=37... at 64.86%
+>Cluster 24
+0	40aa, >seq_57|len=40... *
+>Cluster 25
+0	40aa, >seq_58|len=40... *
+1	38aa, >seq_39262|len=38... at 68.42%
+2	38aa, >seq_39294|len=38... at 60.53%
+3	38aa, >seq_39348|len=38... at 68.42%
+>Cluster 26
+0	40aa, >seq_59|len=40... *
+>Cluster 27
+0	40aa, >seq_201|len=40... *
+1	12aa, >seq_11526|len=12... at 66.67%
+2	16aa, >seq_18499|len=16... at 62.50%
+3	18aa, >seq_19871|len=18... at 66.67%
+4	21aa, >seq_29291|len=21... at 71.43%
+5	28aa, >seq_34380|len=28... at 82.14%
+>Cluster 28
+0	39aa, >seq_158|len=39... *
+1	11aa, >seq_8818|len=11... at 63.64%
+2	32aa, >seq_36421|len=32... at 71.88%
+3	32aa, >seq_36428|len=32... at 62.50%
+4	37aa, >seq_38739|len=37... at 72.97%
+5	38aa, >seq_39165|len=38... at 71.05%
+6	38aa, >seq_39321|len=38... at 71.05%
+7	39aa, >seq_39527|len=39... at 74.36%
+8	39aa, >seq_39557|len=39... at 74.36%
+>Cluster 29
+0	38aa, >seq_60|len=38... *
+1	36aa, >seq_38527|len=36... at 72.22%
+2	37aa, >seq_38746|len=37... at 64.86%
+3	37aa, >seq_38762|len=37... at 67.57%
+4	37aa, >seq_38907|len=37... at 67.57%
+5	37aa, >seq_38923|len=37... at 62.16%
+6	37aa, >seq_39005|len=37... at 67.57%
+7	38aa, >seq_39174|len=38... at 63.16%
+8	38aa, >seq_39185|len=38... at 63.16%
+9	38aa, >seq_39187|len=38... at 63.16%
+10	38aa, >seq_39208|len=38... at 65.79%
+11	38aa, >seq_39251|len=38... at 73.68%
+>Cluster 30
+0	38aa, >seq_61|len=38... *
+1	19aa, >seq_21578|len=19... at 73.68%
+2	19aa, >seq_21715|len=19... at 73.68%
+3	19aa, >seq_21782|len=19... at 63.16%
+4	19aa, >seq_22086|len=19... at 63.16%
+5	20aa, >seq_22743|len=20... at 85.00%
+>Cluster 31
+0	38aa, >seq_62|len=38... *
+>Cluster 32
+0	38aa, >seq_139|len=38... *
+1	12aa, >seq_11113|len=12... at 66.67%
+2	13aa, >seq_12557|len=13... at 61.54%
+3	13aa, >seq_13184|len=13... at 61.54%
+4	14aa, >seq_14448|len=14... at 92.86%
+5	14aa, >seq_14971|len=14... at 85.71%
+6	14aa, >seq_15569|len=14... at 85.71%
+7	18aa, >seq_20456|len=18... at 61.11%
+8	18aa, >seq_20759|len=18... at 66.67%
+9	18aa, >seq_20908|len=18... at 61.11%
+10	19aa, >seq_21742|len=19... at 63.16%
+11	25aa, >seq_32657|len=25... at 60.00%
+12	29aa, >seq_34748|len=29... at 68.97%
+13	29aa, >seq_34753|len=29... at 68.97%
+14	29aa, >seq_34777|len=29... at 62.07%
+15	29aa, >seq_34790|len=29... at 62.07%
+16	29aa, >seq_34798|len=29... at 68.97%
+17	29aa, >seq_34803|len=29... at 72.41%
+18	29aa, >seq_34809|len=29... at 68.97%
+19	29aa, >seq_34815|len=29... at 62.07%
+20	29aa, >seq_34819|len=29... at 65.52%
+21	29aa, >seq_34825|len=29... at 62.07%
+22	29aa, >seq_34834|len=29... at 65.52%
+23	29aa, >seq_34850|len=29... at 68.97%
+24	29aa, >seq_34863|len=29... at 72.41%
+25	29aa, >seq_34886|len=29... at 62.07%
+26	29aa, >seq_34934|len=29... at 68.97%
+27	29aa, >seq_34974|len=29... at 62.07%
+28	29aa, >seq_34990|len=29... at 62.07%
+29	29aa, >seq_35036|len=29... at 62.07%
+30	29aa, >seq_35051|len=29... at 72.41%
+31	29aa, >seq_35052|len=29... at 62.07%
+32	29aa, >seq_35053|len=29... at 62.07%
+33	29aa, >seq_35058|len=29... at 62.07%
+34	29aa, >seq_35059|len=29... at 72.41%
+35	29aa, >seq_35077|len=29... at 62.07%
+36	29aa, >seq_35095|len=29... at 65.52%
+37	29aa, >seq_35126|len=29... at 65.52%
+38	29aa, >seq_35139|len=29... at 65.52%
+39	29aa, >seq_35150|len=29... at 68.97%
+40	29aa, >seq_35226|len=29... at 68.97%
+41	29aa, >seq_35259|len=29... at 62.07%
+42	29aa, >seq_35264|len=29... at 62.07%
+43	29aa, >seq_35272|len=29... at 65.52%
+44	29aa, >seq_35290|len=29... at 62.07%
+45	29aa, >seq_35305|len=29... at 62.07%
+46	29aa, >seq_35323|len=29... at 65.52%
+47	29aa, >seq_35337|len=29... at 72.41%
+48	29aa, >seq_35348|len=29... at 65.52%
+49	33aa, >seq_36849|len=33... at 69.70%
+>Cluster 33
+0	38aa, >seq_225|len=38... *
+1	11aa, >seq_8143|len=11... at 63.64%
+2	11aa, >seq_8271|len=11... at 63.64%
+3	13aa, >seq_13022|len=13... at 61.54%
+4	15aa, >seq_15941|len=15... at 80.00%
+5	16aa, >seq_17937|len=16... at 68.75%
+6	17aa, >seq_19053|len=17... at 64.71%
+7	17aa, >seq_19116|len=17... at 76.47%
+8	17aa, >seq_19424|len=17... at 76.47%
+9	18aa, >seq_19999|len=18... at 66.67%
+10	18aa, >seq_20645|len=18... at 61.11%
+11	18aa, >seq_21005|len=18... at 61.11%
+12	18aa, >seq_21294|len=18... at 61.11%
+13	19aa, >seq_21481|len=19... at 63.16%
+>Cluster 34
+0	37aa, >seq_231|len=37... *
+1	12aa, >seq_9680|len=12... at 66.67%
+2	13aa, >seq_14136|len=13... at 61.54%
+3	30aa, >seq_35915|len=30... at 60.00%
+>Cluster 35
+0	37aa, >seq_235|len=37... *
+1	16aa, >seq_18291|len=16... at 62.50%
+2	37aa, >seq_38704|len=37... at 67.57%
+>Cluster 36
+0	36aa, >seq_83|len=36... *
+>Cluster 37
+0	34aa, >seq_162|len=34... *
+1	11aa, >seq_8611|len=11... at 63.64%
+2	11aa, >seq_8615|len=11... at 63.64%
+3	11aa, >seq_9195|len=11... at 63.64%
+4	11aa, >seq_9228|len=11... at 63.64%
+5	13aa, >seq_13206|len=13... at 69.23%
+6	14aa, >seq_15299|len=14... at 64.29%
+7	14aa, >seq_15379|len=14... at 64.29%
+8	15aa, >seq_15766|len=15... at 60.00%
+9	15aa, >seq_15914|len=15... at 73.33%
+10	15aa, >seq_15945|len=15... at 73.33%
+11	15aa, >seq_15948|len=15... at 80.00%
+12	15aa, >seq_16296|len=15... at 80.00%
+13	15aa, >seq_16737|len=15... at 73.33%
+14	15aa, >seq_17322|len=15... at 66.67%
+15	16aa, >seq_17410|len=16... at 62.50%
+16	17aa, >seq_18998|len=17... at 64.71%
+17	17aa, >seq_19017|len=17... at 82.35%
+18	17aa, >seq_19079|len=17... at 70.59%
+19	18aa, >seq_20327|len=18... at 66.67%
+20	26aa, >seq_33642|len=26... at 76.92%
+21	30aa, >seq_35674|len=30... at 100.00%
+22	31aa, >seq_36345|len=31... at 67.74%
+23	34aa, >seq_37334|len=34... at 67.65%
+24	34aa, >seq_37525|len=34... at 73.53%
+25	34aa, >seq_37527|len=34... at 85.29%
+26	34aa, >seq_37540|len=34... at 82.35%
+>Cluster 38
+0	34aa, >seq_163|len=34... *
+1	12aa, >seq_10877|len=12... at 66.67%
+2	18aa, >seq_19856|len=18... at 66.67%
+3	34aa, >seq_37426|len=34... at 94.12%
+>Cluster 39
+0	34aa, >seq_164|len=34... *
+1	13aa, >seq_12584|len=13... at 61.54%
+2	13aa, >seq_14261|len=13... at 76.92%
+3	14aa, >seq_15105|len=14... at 64.29%
+4	14aa, >seq_15488|len=14... at 71.43%
+5	15aa, >seq_16155|len=15... at 60.00%
+6	15aa, >seq_16439|len=15... at 66.67%
+7	17aa, >seq_19433|len=17... at 64.71%
+8	30aa, >seq_35358|len=30... at 66.67%
+>Cluster 40
+0	33aa, >seq_98|len=33... *
+1	11aa, >seq_9094|len=11... at 63.64%
+2	33aa, >seq_36848|len=33... at 66.67%
+3	33aa, >seq_36880|len=33... at 63.64%
+4	33aa, >seq_36890|len=33... at 60.61%
+5	33aa, >seq_37145|len=33... at 60.61%
+6	33aa, >seq_37225|len=33... at 63.64%
+>Cluster 41
+0	32aa, >seq_63|len=32... *
+1	13aa, >seq_12905|len=13... at 61.54%
+2	13aa, >seq_14071|len=13... at 61.54%
+>Cluster 42
+0	32aa, >seq_70|len=32... *
+1	25aa, >seq_33109|len=25... at 60.00%
+2	27aa, >seq_33971|len=27... at 62.96%
+3	28aa, >seq_34390|len=28... at 64.29%
+4	28aa, >seq_34453|len=28... at 75.00%
+5	28aa, >seq_34698|len=28... at 64.29%
+6	29aa, >seq_34890|len=29... at 68.97%
+7	29aa, >seq_35171|len=29... at 65.52%
+8	31aa, >seq_36214|len=31... at 74.19%
+9	32aa, >seq_36614|len=32... at 75.00%
+>Cluster 43
+0	32aa, >seq_72|len=32... *
+1	28aa, >seq_34384|len=28... at 64.29%
+2	28aa, >seq_34425|len=28... at 71.43%
+3	28aa, >seq_34484|len=28... at 75.00%
+4	28aa, >seq_34566|len=28... at 64.29%
+5	28aa, >seq_34655|len=28... at 78.57%
+6	28aa, >seq_34689|len=28... at 75.00%
+7	28aa, >seq_34704|len=28... at 60.71%
+8	29aa, >seq_34796|len=29... at 62.07%
+9	29aa, >seq_34813|len=29... at 68.97%
+10	29aa, >seq_35336|len=29... at 68.97%
+11	30aa, >seq_35403|len=30... at 66.67%
+>Cluster 44
+0	32aa, >seq_149|len=32... *
+>Cluster 45
+0	32aa, >seq_222|len=32... *
+1	16aa, >seq_17382|len=16... at 75.00%
+2	16aa, >seq_17498|len=16... at 81.25%
+3	16aa, >seq_17608|len=16... at 68.75%
+4	16aa, >seq_17670|len=16... at 81.25%
+5	16aa, >seq_17720|len=16... at 81.25%
+6	16aa, >seq_17929|len=16... at 75.00%
+7	16aa, >seq_17945|len=16... at 68.75%
+8	16aa, >seq_18094|len=16... at 81.25%
+9	16aa, >seq_18180|len=16... at 87.50%
+10	16aa, >seq_18590|len=16... at 75.00%
+11	16aa, >seq_18597|len=16... at 62.50%
+12	18aa, >seq_20568|len=18... at 66.67%
+13	19aa, >seq_21770|len=19... at 73.68%
+14	28aa, >seq_34430|len=28... at 71.43%
+>Cluster 46
+0	32aa, >seq_223|len=32... *
+1	11aa, >seq_8159|len=11... at 63.64%
+2	11aa, >seq_8215|len=11... at 72.73%
+3	11aa, >seq_8391|len=11... at 63.64%
+4	11aa, >seq_8967|len=11... at 63.64%
+5	14aa, >seq_14764|len=14... at 71.43%
+6	15aa, >seq_17147|len=15... at 66.67%
+7	16aa, >seq_17355|len=16... at 62.50%
+8	16aa, >seq_17677|len=16... at 62.50%
+9	16aa, >seq_18152|len=16... at 62.50%
+10	17aa, >seq_19495|len=17... at 64.71%
+11	18aa, >seq_20978|len=18... at 61.11%
+12	28aa, >seq_34443|len=28... at 71.43%
+>Cluster 47
+0	32aa, >seq_241|len=32... *
+1	11aa, >seq_8004|len=11... at 72.73%
+2	11aa, >seq_8750|len=11... at 63.64%
+3	11aa, >seq_8814|len=11... at 63.64%
+4	13aa, >seq_12685|len=13... at 61.54%
+5	29aa, >seq_34774|len=29... at 62.07%
+>Cluster 48
+0	31aa, >seq_12|len=31... *
+>Cluster 49
+0	30aa, >seq_215|len=30... *
+1	11aa, >seq_8257|len=11... at 63.64%
+2	11aa, >seq_8394|len=11... at 72.73%
+3	11aa, >seq_9051|len=11... at 63.64%
+4	11aa, >seq_9135|len=11... at 63.64%
+5	29aa, >seq_35269|len=29... at 75.86%
+>Cluster 50
+0	29aa, >seq_192|len=29... *
+1	29aa, >seq_34989|len=29... at 79.31%
+>Cluster 51
+0	29aa, >seq_193|len=29... *
+1	11aa, >seq_8936|len=11... at 63.64%
+>Cluster 52
+0	28aa, >seq_103|len=28... *
+1	13aa, >seq_13434|len=13... at 61.54%
+2	16aa, >seq_17375|len=16... at 62.50%
+3	19aa, >seq_22443|len=19... at 63.16%
+4	28aa, >seq_34289|len=28... at 60.71%
+5	28aa, >seq_34553|len=28... at 60.71%
+6	28aa, >seq_34694|len=28... at 71.43%
+>Cluster 53
+0	27aa, >seq_65|len=27... *
+1	18aa, >seq_21133|len=18... at 61.11%
+2	24aa, >seq_32026|len=24... at 91.67%
+3	25aa, >seq_32604|len=25... at 84.00%
+>Cluster 54
+0	27aa, >seq_66|len=27... *
+1	13aa, >seq_12447|len=13... at 61.54%
+2	13aa, >seq_12864|len=13... at 61.54%
+3	13aa, >seq_12950|len=13... at 69.23%
+4	16aa, >seq_17587|len=16... at 62.50%
+5	16aa, >seq_17640|len=16... at 62.50%
+6	16aa, >seq_18018|len=16... at 62.50%
+7	27aa, >seq_33803|len=27... at 81.48%
+>Cluster 55
+0	27aa, >seq_67|len=27... *
+1	12aa, >seq_10033|len=12... at 66.67%
+2	12aa, >seq_11768|len=12... at 66.67%
+>Cluster 56
+0	27aa, >seq_118|len=27... *
+1	13aa, >seq_12571|len=13... at 61.54%
+2	13aa, >seq_12722|len=13... at 61.54%
+3	13aa, >seq_13349|len=13... at 61.54%
+4	13aa, >seq_13801|len=13... at 61.54%
+5	13aa, >seq_14095|len=13... at 61.54%
+>Cluster 57
+0	27aa, >seq_119|len=27... *
+>Cluster 58
+0	26aa, >seq_126|len=26... *
+1	13aa, >seq_12882|len=13... at 69.23%
+2	14aa, >seq_14457|len=14... at 71.43%
+3	17aa, >seq_18938|len=17... at 64.71%
+>Cluster 59
+0	26aa, >seq_214|len=26... *
+1	11aa, >seq_8588|len=11... at 63.64%
+>Cluster 60
+0	25aa, >seq_1|len=25... *
+>Cluster 61
+0	25aa, >seq_11|len=25... *
+1	25aa, >seq_32416|len=25... at 76.00%
+2	25aa, >seq_32509|len=25... at 84.00%
+3	25aa, >seq_32724|len=25... at 72.00%
+>Cluster 62
+0	25aa, >seq_84|len=25... *
+1	15aa, >seq_15755|len=15... at 60.00%
+2	23aa, >seq_31497|len=23... at 73.91%
+3	25aa, >seq_32807|len=25... at 76.00%
+>Cluster 63
+0	25aa, >seq_85|len=25... *
+1	20aa, >seq_24265|len=20... at 60.00%
+2	23aa, >seq_30973|len=23... at 60.87%
+3	24aa, >seq_31711|len=24... at 62.50%
+>Cluster 64
+0	25aa, >seq_86|len=25... *
+1	13aa, >seq_13626|len=13... at 61.54%
+2	18aa, >seq_20663|len=18... at 66.67%
+3	24aa, >seq_32074|len=24... at 75.00%
+4	24aa, >seq_32297|len=24... at 87.50%
+>Cluster 65
+0	25aa, >seq_87|len=25... *
+>Cluster 66
+0	25aa, >seq_88|len=25... *
+>Cluster 67
+0	25aa, >seq_96|len=25... *
+1	21aa, >seq_28530|len=21... at 71.43%
+2	24aa, >seq_32282|len=24... at 75.00%
+>Cluster 68
+0	25aa, >seq_100|len=25... *
+1	13aa, >seq_14139|len=13... at 61.54%
+>Cluster 69
+0	25aa, >seq_101|len=25... *
+>Cluster 70
+0	25aa, >seq_102|len=25... *
+>Cluster 71
+0	25aa, >seq_125|len=25... *
+>Cluster 72
+0	24aa, >seq_16|len=24... *
+>Cluster 73
+0	24aa, >seq_89|len=24... *
+1	23aa, >seq_31273|len=23... at 60.87%
+2	24aa, >seq_31976|len=24... at 79.17%
+3	24aa, >seq_32102|len=24... at 79.17%
+>Cluster 74
+0	24aa, >seq_90|len=24... *
+1	15aa, >seq_16802|len=15... at 60.00%
+2	23aa, >seq_31115|len=23... at 60.87%
+>Cluster 75
+0	24aa, >seq_91|len=24... *
+>Cluster 76
+0	24aa, >seq_104|len=24... *
+>Cluster 77
+0	24aa, >seq_105|len=24... *
+>Cluster 78
+0	24aa, >seq_106|len=24... *
+>Cluster 79
+0	24aa, >seq_107|len=24... *
+>Cluster 80
+0	24aa, >seq_108|len=24... *
+>Cluster 81
+0	24aa, >seq_109|len=24... *
+>Cluster 82
+0	24aa, >seq_110|len=24... *
+>Cluster 83
+0	24aa, >seq_111|len=24... *
+>Cluster 84
+0	24aa, >seq_112|len=24... *
+>Cluster 85
+0	24aa, >seq_113|len=24... *
+>Cluster 86
+0	24aa, >seq_114|len=24... *
+>Cluster 87
+0	24aa, >seq_115|len=24... *
+>Cluster 88
+0	24aa, >seq_116|len=24... *
+>Cluster 89
+0	24aa, >seq_117|len=24... *
+>Cluster 90
+0	24aa, >seq_122|len=24... *
+1	11aa, >seq_8202|len=11... at 81.82%
+2	11aa, >seq_8837|len=11... at 72.73%
+3	11aa, >seq_9155|len=11... at 63.64%
+4	11aa, >seq_9259|len=11... at 81.82%
+5	13aa, >seq_12946|len=13... at 61.54%
+6	13aa, >seq_13331|len=13... at 76.92%
+7	14aa, >seq_14862|len=14... at 78.57%
+8	14aa, >seq_15019|len=14... at 64.29%
+9	14aa, >seq_15347|len=14... at 78.57%
+10	14aa, >seq_15405|len=14... at 71.43%
+11	15aa, >seq_16236|len=15... at 73.33%
+12	15aa, >seq_16957|len=15... at 66.67%
+13	16aa, >seq_17530|len=16... at 62.50%
+14	16aa, >seq_17827|len=16... at 62.50%
+15	16aa, >seq_18056|len=16... at 81.25%
+16	16aa, >seq_18187|len=16... at 62.50%
+17	16aa, >seq_18687|len=16... at 62.50%
+18	17aa, >seq_19508|len=17... at 70.59%
+19	17aa, >seq_19680|len=17... at 64.71%
+20	18aa, >seq_20205|len=18... at 61.11%
+21	18aa, >seq_20417|len=18... at 61.11%
+22	20aa, >seq_23370|len=20... at 60.00%
+23	20aa, >seq_27941|len=20... at 60.00%
+24	22aa, >seq_30870|len=22... at 72.73%
+25	23aa, >seq_31162|len=23... at 60.87%
+>Cluster 91
+0	24aa, >seq_128|len=24... *
+1	12aa, >seq_9858|len=12... at 83.33%
+2	12aa, >seq_10372|len=12... at 83.33%
+3	12aa, >seq_11086|len=12... at 91.67%
+4	12aa, >seq_12002|len=12... at 91.67%
+5	16aa, >seq_17481|len=16... at 62.50%
+6	16aa, >seq_18155|len=16... at 62.50%
+7	20aa, >seq_28208|len=20... at 70.00%
+8	24aa, >seq_31607|len=24... at 83.33%
+9	24aa, >seq_31712|len=24... at 75.00%
+10	24aa, >seq_31906|len=24... at 70.83%
+>Cluster 92
+0	24aa, >seq_191|len=24... *
+1	11aa, >seq_9018|len=11... at 63.64%
+2	13aa, >seq_13262|len=13... at 76.92%
+3	18aa, >seq_19943|len=18... at 61.11%
+4	18aa, >seq_20012|len=18... at 66.67%
+5	18aa, >seq_20189|len=18... at 61.11%
+6	24aa, >seq_31826|len=24... at 75.00%
+7	24aa, >seq_32123|len=24... at 83.33%
+8	24aa, >seq_32188|len=24... at 83.33%
+>Cluster 93
+0	24aa, >seq_196|len=24... *
+1	11aa, >seq_8461|len=11... at 63.64%
+2	13aa, >seq_13365|len=13... at 61.54%
+3	24aa, >seq_31856|len=24... at 70.83%
+>Cluster 94
+0	24aa, >seq_221|len=24... *
+1	12aa, >seq_10007|len=12... at 66.67%
+2	20aa, >seq_27427|len=20... at 60.00%
+>Cluster 95
+0	24aa, >seq_257|len=24... *
+>Cluster 96
+0	24aa, >seq_258|len=24... *
+>Cluster 97
+0	23aa, >seq_92|len=23... *
+1	12aa, >seq_9879|len=12... at 75.00%
+2	23aa, >seq_30992|len=23... at 78.26%
+3	23aa, >seq_30998|len=23... at 69.57%
+>Cluster 98
+0	23aa, >seq_93|len=23... *
+>Cluster 99
+0	23aa, >seq_94|len=23... *
+1	12aa, >seq_10196|len=12... at 66.67%
+2	12aa, >seq_11131|len=12... at 66.67%
+>Cluster 100
+0	23aa, >seq_95|len=23... *
+>Cluster 101
+0	23aa, >seq_186|len=23... *
+1	11aa, >seq_8093|len=11... at 72.73%
+2	11aa, >seq_8285|len=11... at 63.64%
+3	11aa, >seq_8506|len=11... at 63.64%
+4	11aa, >seq_9110|len=11... at 72.73%
+5	12aa, >seq_9955|len=12... at 66.67%
+6	13aa, >seq_14142|len=13... at 69.23%
+7	14aa, >seq_14477|len=14... at 64.29%
+8	14aa, >seq_14726|len=14... at 64.29%
+9	15aa, >seq_15762|len=15... at 66.67%
+10	15aa, >seq_16198|len=15... at 66.67%
+11	15aa, >seq_16735|len=15... at 60.00%
+12	15aa, >seq_17046|len=15... at 80.00%
+13	16aa, >seq_17518|len=16... at 68.75%
+14	17aa, >seq_19307|len=17... at 70.59%
+15	17aa, >seq_19378|len=17... at 64.71%
+16	18aa, >seq_20064|len=18... at 83.33%
+17	18aa, >seq_20237|len=18... at 61.11%
+18	18aa, >seq_21328|len=18... at 61.11%
+19	20aa, >seq_27987|len=20... at 65.00%
+20	21aa, >seq_28612|len=21... at 71.43%
+21	21aa, >seq_29682|len=21... at 61.90%
+22	23aa, >seq_30906|len=23... at 60.87%
+>Cluster 102
+0	22aa, >seq_266|len=22... *
+1	11aa, >seq_9169|len=11... at 63.64%
+2	13aa, >seq_12546|len=13... at 61.54%
+>Cluster 103
+0	21aa, >seq_71|len=21... *
+1	15aa, >seq_16003|len=15... at 73.33%
+2	21aa, >seq_28890|len=21... at 71.43%
+3	21aa, >seq_29190|len=21... at 71.43%
+4	21aa, >seq_29242|len=21... at 80.95%
+>Cluster 104
+0	21aa, >seq_82|len=21... *
+>Cluster 105
+0	21aa, >seq_99|len=21... *
+1	11aa, >seq_8487|len=11... at 63.64%
+2	21aa, >seq_28470|len=21... at 61.90%
+3	21aa, >seq_29037|len=21... at 71.43%
+>Cluster 106
+0	21aa, >seq_153|len=21... *
+1	11aa, >seq_8559|len=11... at 63.64%
+2	12aa, >seq_10418|len=12... at 75.00%
+3	13aa, >seq_12924|len=13... at 61.54%
+4	13aa, >seq_13449|len=13... at 76.92%
+5	13aa, >seq_13604|len=13... at 69.23%
+6	13aa, >seq_13665|len=13... at 69.23%
+7	13aa, >seq_14237|len=13... at 69.23%
+8	13aa, >seq_14247|len=13... at 76.92%
+9	14aa, >seq_14748|len=14... at 85.71%
+10	14aa, >seq_15274|len=14... at 64.29%
+11	15aa, >seq_15722|len=15... at 60.00%
+12	15aa, >seq_16105|len=15... at 86.67%
+13	16aa, >seq_17920|len=16... at 62.50%
+14	16aa, >seq_18329|len=16... at 62.50%
+15	17aa, >seq_19428|len=17... at 82.35%
+16	18aa, >seq_21105|len=18... at 61.11%
+17	19aa, >seq_22269|len=19... at 84.21%
+18	20aa, >seq_23012|len=20... at 75.00%
+19	20aa, >seq_23731|len=20... at 70.00%
+20	20aa, >seq_28073|len=20... at 60.00%
+21	21aa, >seq_28640|len=21... at 71.43%
+22	21aa, >seq_28955|len=21... at 61.90%
+23	21aa, >seq_28970|len=21... at 80.95%
+24	21aa, >seq_29353|len=21... at 80.95%
+25	21aa, >seq_30076|len=21... at 71.43%
+26	21aa, >seq_30125|len=21... at 85.71%
+>Cluster 107
+0	21aa, >seq_189|len=21... *
+>Cluster 108
+0	21aa, >seq_240|len=21... *
+>Cluster 109
+0	20aa, >seq_17|len=20... *
+1	11aa, >seq_9348|len=11... at 63.64%
+2	15aa, >seq_16027|len=15... at 60.00%
+>Cluster 110
+0	20aa, >seq_27|len=20... *
+1	11aa, >seq_8175|len=11... at 63.64%
+2	11aa, >seq_8318|len=11... at 63.64%
+3	20aa, >seq_22618|len=20... at 60.00%
+4	20aa, >seq_23403|len=20... at 60.00%
+5	20aa, >seq_23508|len=20... at 65.00%
+6	20aa, >seq_23581|len=20... at 60.00%
+7	20aa, >seq_24014|len=20... at 60.00%
+8	20aa, >seq_24164|len=20... at 65.00%
+9	20aa, >seq_24280|len=20... at 65.00%
+10	20aa, >seq_25217|len=20... at 65.00%
+11	20aa, >seq_25691|len=20... at 60.00%
+12	20aa, >seq_26782|len=20... at 60.00%
+13	20aa, >seq_28005|len=20... at 60.00%
+>Cluster 111
+0	20aa, >seq_32|len=20... *
+1	11aa, >seq_8061|len=11... at 63.64%
+2	12aa, >seq_9548|len=12... at 66.67%
+3	13aa, >seq_12958|len=13... at 69.23%
+4	13aa, >seq_12964|len=13... at 61.54%
+5	13aa, >seq_13390|len=13... at 61.54%
+6	13aa, >seq_13872|len=13... at 61.54%
+7	14aa, >seq_14399|len=14... at 78.57%
+8	15aa, >seq_17336|len=15... at 60.00%
+9	17aa, >seq_19106|len=17... at 64.71%
+10	17aa, >seq_19115|len=17... at 64.71%
+11	17aa, >seq_19278|len=17... at 70.59%
+12	18aa, >seq_21015|len=18... at 61.11%
+13	20aa, >seq_23867|len=20... at 90.00%
+14	20aa, >seq_25177|len=20... at 85.00%
+15	20aa, >seq_26406|len=20... at 80.00%
+16	20aa, >seq_27392|len=20... at 85.00%
+>Cluster 112
+0	20aa, >seq_34|len=20... *
+1	19aa, >seq_21590|len=19... at 78.95%
+2	19aa, >seq_21676|len=19... at 89.47%
+3	19aa, >seq_21795|len=19... at 63.16%
+4	19aa, >seq_22012|len=19... at 68.42%
+5	19aa, >seq_22080|len=19... at 68.42%
+6	19aa, >seq_22177|len=19... at 84.21%
+7	19aa, >seq_22219|len=19... at 78.95%
+8	19aa, >seq_22495|len=19... at 73.68%
+9	20aa, >seq_26106|len=20... at 90.00%
+>Cluster 113
+0	20aa, >seq_38|len=20... *
+1	18aa, >seq_21440|len=18... at 66.67%
+2	19aa, >seq_21573|len=19... at 63.16%
+3	19aa, >seq_21661|len=19... at 78.95%
+4	19aa, >seq_21812|len=19... at 63.16%
+5	19aa, >seq_21829|len=19... at 63.16%
+6	19aa, >seq_22234|len=19... at 94.74%
+>Cluster 114
+0	20aa, >seq_44|len=20... *
+1	11aa, >seq_7994|len=11... at 81.82%
+2	11aa, >seq_8360|len=11... at 90.91%
+3	11aa, >seq_8894|len=11... at 81.82%
+4	12aa, >seq_10533|len=12... at 91.67%
+5	12aa, >seq_11519|len=12... at 91.67%
+6	12aa, >seq_11806|len=12... at 91.67%
+7	12aa, >seq_12059|len=12... at 91.67%
+8	12aa, >seq_12259|len=12... at 91.67%
+9	13aa, >seq_12370|len=13... at 69.23%
+10	13aa, >seq_12691|len=13... at 92.31%
+11	13aa, >seq_13008|len=13... at 92.31%
+12	13aa, >seq_13224|len=13... at 92.31%
+13	13aa, >seq_13432|len=13... at 61.54%
+14	13aa, >seq_13631|len=13... at 92.31%
+15	13aa, >seq_13864|len=13... at 92.31%
+16	13aa, >seq_13884|len=13... at 92.31%
+17	13aa, >seq_13973|len=13... at 84.62%
+18	13aa, >seq_14031|len=13... at 92.31%
+19	13aa, >seq_14191|len=13... at 92.31%
+20	13aa, >seq_14211|len=13... at 92.31%
+21	15aa, >seq_16458|len=15... at 66.67%
+22	15aa, >seq_17278|len=15... at 73.33%
+23	16aa, >seq_17988|len=16... at 62.50%
+24	17aa, >seq_18726|len=17... at 70.59%
+25	18aa, >seq_20307|len=18... at 61.11%
+26	19aa, >seq_22168|len=19... at 68.42%
+27	20aa, >seq_24032|len=20... at 60.00%
+28	20aa, >seq_24929|len=20... at 60.00%
+29	20aa, >seq_27185|len=20... at 60.00%
+30	20aa, >seq_27198|len=20... at 60.00%
+31	20aa, >seq_27505|len=20... at 60.00%
+32	20aa, >seq_28139|len=20... at 65.00%
+>Cluster 115
+0	20aa, >seq_140|len=20... *
+>Cluster 116
+0	20aa, >seq_148|len=20... *
+>Cluster 117
+0	20aa, >seq_167|len=20... *
+1	11aa, >seq_8166|len=11... at 63.64%
+2	11aa, >seq_9030|len=11... at 63.64%
+3	15aa, >seq_17233|len=15... at 60.00%
+>Cluster 118
+0	20aa, >seq_208|len=20... *
+1	11aa, >seq_8059|len=11... at 63.64%
+2	11aa, >seq_9048|len=11... at 63.64%
+3	13aa, >seq_12956|len=13... at 69.23%
+4	13aa, >seq_13724|len=13... at 61.54%
+5	14aa, >seq_14434|len=14... at 64.29%
+6	15aa, >seq_16488|len=15... at 60.00%
+7	16aa, >seq_18068|len=16... at 62.50%
+8	16aa, >seq_18327|len=16... at 62.50%
+9	20aa, >seq_24698|len=20... at 60.00%
+10	20aa, >seq_25963|len=20... at 60.00%
+11	20aa, >seq_26092|len=20... at 60.00%
+>Cluster 119
+0	20aa, >seq_239|len=20... *
+1	13aa, >seq_13903|len=13... at 61.54%
+>Cluster 120
+0	20aa, >seq_261|len=20... *
+1	11aa, >seq_9149|len=11... at 63.64%
+2	12aa, >seq_9579|len=12... at 66.67%
+3	12aa, >seq_9598|len=12... at 66.67%
+4	12aa, >seq_9650|len=12... at 66.67%
+5	12aa, >seq_9710|len=12... at 75.00%
+6	12aa, >seq_10246|len=12... at 66.67%
+7	12aa, >seq_11338|len=12... at 66.67%
+8	12aa, >seq_11479|len=12... at 75.00%
+9	12aa, >seq_12026|len=12... at 66.67%
+10	13aa, >seq_13098|len=13... at 69.23%
+11	13aa, >seq_13144|len=13... at 61.54%
+12	13aa, >seq_13681|len=13... at 61.54%
+13	13aa, >seq_13967|len=13... at 69.23%
+14	13aa, >seq_14192|len=13... at 61.54%
+15	15aa, >seq_15819|len=15... at 66.67%
+16	15aa, >seq_15834|len=15... at 60.00%
+17	15aa, >seq_15974|len=15... at 60.00%
+18	15aa, >seq_16592|len=15... at 60.00%
+19	16aa, >seq_17536|len=16... at 68.75%
+20	16aa, >seq_17943|len=16... at 68.75%
+21	17aa, >seq_19257|len=17... at 70.59%
+22	18aa, >seq_19951|len=18... at 66.67%
+23	18aa, >seq_20414|len=18... at 66.67%
+>Cluster 121
+0	19aa, >seq_20|len=19... *
+1	11aa, >seq_7992|len=11... at 90.91%
+2	11aa, >seq_8171|len=11... at 63.64%
+3	11aa, >seq_8352|len=11... at 63.64%
+4	11aa, >seq_8686|len=11... at 63.64%
+5	11aa, >seq_8923|len=11... at 63.64%
+6	11aa, >seq_9241|len=11... at 72.73%
+7	12aa, >seq_9594|len=12... at 66.67%
+8	13aa, >seq_12380|len=13... at 61.54%
+9	13aa, >seq_14099|len=13... at 61.54%
+10	14aa, >seq_15290|len=14... at 64.29%
+11	15aa, >seq_15931|len=15... at 60.00%
+12	15aa, >seq_16379|len=15... at 60.00%
+13	15aa, >seq_16431|len=15... at 66.67%
+14	16aa, >seq_17771|len=16... at 62.50%
+15	16aa, >seq_17832|len=16... at 62.50%
+16	16aa, >seq_17863|len=16... at 62.50%
+17	18aa, >seq_20016|len=18... at 61.11%
+18	18aa, >seq_21348|len=18... at 61.11%
+>Cluster 122
+0	19aa, >seq_21|len=19... *
+1	11aa, >seq_9205|len=11... at 72.73%
+2	12aa, >seq_10049|len=12... at 66.67%
+3	12aa, >seq_11670|len=12... at 66.67%
+4	12aa, >seq_12172|len=12... at 66.67%
+5	19aa, >seq_22467|len=19... at 84.21%
+>Cluster 123
+0	19aa, >seq_33|len=19... *
+>Cluster 124
+0	19aa, >seq_35|len=19... *
+>Cluster 125
+0	19aa, >seq_36|len=19... *
+>Cluster 126
+0	19aa, >seq_37|len=19... *
+>Cluster 127
+0	19aa, >seq_39|len=19... *
+>Cluster 128
+0	19aa, >seq_40|len=19... *
+1	17aa, >seq_19625|len=17... at 64.71%
+>Cluster 129
+0	19aa, >seq_41|len=19... *
+1	18aa, >seq_19895|len=18... at 61.11%
+2	19aa, >seq_21832|len=19... at 63.16%
+>Cluster 130
+0	19aa, >seq_123|len=19... *
+1	11aa, >seq_9132|len=11... at 72.73%
+2	13aa, >seq_13059|len=13... at 61.54%
+3	14aa, >seq_14407|len=14... at 64.29%
+4	14aa, >seq_14635|len=14... at 64.29%
+5	19aa, >seq_21574|len=19... at 78.95%
+>Cluster 131
+0	19aa, >seq_129|len=19... *
+1	11aa, >seq_8497|len=11... at 63.64%
+2	11aa, >seq_8772|len=11... at 63.64%
+3	12aa, >seq_9556|len=12... at 91.67%
+4	12aa, >seq_10316|len=12... at 100.00%
+5	12aa, >seq_11719|len=12... at 66.67%
+6	14aa, >seq_15207|len=14... at 78.57%
+7	15aa, >seq_15791|len=15... at 66.67%
+8	15aa, >seq_15861|len=15... at 66.67%
+9	15aa, >seq_16440|len=15... at 66.67%
+10	15aa, >seq_16572|len=15... at 73.33%
+11	15aa, >seq_16966|len=15... at 66.67%
+>Cluster 132
+0	19aa, >seq_130|len=19... *
+1	11aa, >seq_8881|len=11... at 63.64%
+2	15aa, >seq_16298|len=15... at 60.00%
+3	15aa, >seq_16716|len=15... at 60.00%
+>Cluster 133
+0	19aa, >seq_131|len=19... *
+>Cluster 134
+0	19aa, >seq_132|len=19... *
+1	11aa, >seq_8703|len=11... at 63.64%
+2	13aa, >seq_12871|len=13... at 61.54%
+3	13aa, >seq_13769|len=13... at 84.62%
+4	14aa, >seq_14570|len=14... at 64.29%
+5	15aa, >seq_17083|len=15... at 60.00%
+>Cluster 135
+0	19aa, >seq_138|len=19... *
+1	11aa, >seq_8210|len=11... at 63.64%
+2	14aa, >seq_15435|len=14... at 64.29%
+>Cluster 136
+0	19aa, >seq_213|len=19... *
+>Cluster 137
+0	19aa, >seq_242|len=19... *
+1	15aa, >seq_15999|len=15... at 73.33%
+2	15aa, >seq_16910|len=15... at 66.67%
+3	18aa, >seq_20493|len=18... at 66.67%
+4	19aa, >seq_21451|len=19... at 73.68%
+5	19aa, >seq_21466|len=19... at 68.42%
+6	19aa, >seq_21498|len=19... at 63.16%
+7	19aa, >seq_21512|len=19... at 68.42%
+8	19aa, >seq_21549|len=19... at 63.16%
+9	19aa, >seq_21563|len=19... at 68.42%
+10	19aa, >seq_21766|len=19... at 63.16%
+11	19aa, >seq_21864|len=19... at 63.16%
+12	19aa, >seq_21929|len=19... at 68.42%
+13	19aa, >seq_22250|len=19... at 63.16%
+14	19aa, >seq_22260|len=19... at 63.16%
+>Cluster 138
+0	18aa, >seq_2|len=18... *
+1	13aa, >seq_13236|len=13... at 61.54%
+2	13aa, >seq_13619|len=13... at 61.54%
+3	13aa, >seq_13671|len=13... at 61.54%
+4	13aa, >seq_14026|len=13... at 61.54%
+5	14aa, >seq_14701|len=14... at 64.29%
+6	14aa, >seq_14898|len=14... at 71.43%
+7	15aa, >seq_16733|len=15... at 73.33%
+8	15aa, >seq_16961|len=15... at 60.00%
+9	18aa, >seq_19841|len=18... at 66.67%
+10	18aa, >seq_20096|len=18... at 66.67%
+11	18aa, >seq_20117|len=18... at 61.11%
+>Cluster 139
+0	18aa, >seq_19|len=18... *
+1	11aa, >seq_8146|len=11... at 63.64%
+2	11aa, >seq_8225|len=11... at 63.64%
+3	11aa, >seq_9215|len=11... at 63.64%
+4	12aa, >seq_10051|len=12... at 75.00%
+5	12aa, >seq_10355|len=12... at 75.00%
+6	13aa, >seq_12878|len=13... at 61.54%
+7	13aa, >seq_13642|len=13... at 61.54%
+8	14aa, >seq_14621|len=14... at 64.29%
+9	15aa, >seq_16005|len=15... at 60.00%
+10	18aa, >seq_19865|len=18... at 61.11%
+>Cluster 140
+0	18aa, >seq_29|len=18... *
+1	11aa, >seq_8853|len=11... at 63.64%
+2	12aa, >seq_10220|len=12... at 66.67%
+3	13aa, >seq_12463|len=13... at 61.54%
+4	13aa, >seq_12750|len=13... at 61.54%
+5	13aa, >seq_12955|len=13... at 61.54%
+6	13aa, >seq_13426|len=13... at 61.54%
+7	13aa, >seq_13445|len=13... at 61.54%
+8	13aa, >seq_13734|len=13... at 61.54%
+9	13aa, >seq_13802|len=13... at 69.23%
+10	13aa, >seq_13923|len=13... at 61.54%
+11	13aa, >seq_14175|len=13... at 61.54%
+12	14aa, >seq_15039|len=14... at 78.57%
+13	14aa, >seq_15106|len=14... at 64.29%
+14	15aa, >seq_15744|len=15... at 60.00%
+15	15aa, >seq_15782|len=15... at 66.67%
+16	15aa, >seq_16415|len=15... at 60.00%
+17	15aa, >seq_16962|len=15... at 60.00%
+18	15aa, >seq_17041|len=15... at 60.00%
+19	15aa, >seq_17194|len=15... at 60.00%
+20	18aa, >seq_20070|len=18... at 61.11%
+21	18aa, >seq_20400|len=18... at 61.11%
+>Cluster 141
+0	18aa, >seq_48|len=18... *
+1	15aa, >seq_16812|len=15... at 60.00%
+>Cluster 142
+0	18aa, >seq_49|len=18... *
+1	11aa, >seq_8632|len=11... at 63.64%
+2	12aa, >seq_10181|len=12... at 66.67%
+>Cluster 143
+0	18aa, >seq_50|len=18... *
+>Cluster 144
+0	18aa, >seq_51|len=18... *
+>Cluster 145
+0	18aa, >seq_80|len=18... *
+>Cluster 146
+0	18aa, >seq_121|len=18... *
+1	12aa, >seq_11386|len=12... at 75.00%
+2	13aa, >seq_13782|len=13... at 76.92%
+3	14aa, >seq_14585|len=14... at 64.29%
+4	15aa, >seq_15715|len=15... at 73.33%
+5	15aa, >seq_15758|len=15... at 66.67%
+6	15aa, >seq_17297|len=15... at 60.00%
+7	18aa, >seq_20346|len=18... at 77.78%
+8	18aa, >seq_20867|len=18... at 77.78%
+>Cluster 147
+0	18aa, >seq_143|len=18... *
+1	12aa, >seq_9552|len=12... at 75.00%
+2	12aa, >seq_10287|len=12... at 66.67%
+3	12aa, >seq_11323|len=12... at 66.67%
+4	13aa, >seq_12662|len=13... at 76.92%
+5	14aa, >seq_14871|len=14... at 71.43%
+6	15aa, >seq_15745|len=15... at 60.00%
+7	16aa, >seq_17430|len=16... at 75.00%
+8	16aa, >seq_18270|len=16... at 62.50%
+9	18aa, >seq_20494|len=18... at 66.67%
+>Cluster 148
+0	18aa, >seq_145|len=18... *
+1	11aa, >seq_9296|len=11... at 63.64%
+2	12aa, >seq_12197|len=12... at 66.67%
+3	16aa, >seq_17548|len=16... at 62.50%
+>Cluster 149
+0	18aa, >seq_180|len=18... *
+1	11aa, >seq_8720|len=11... at 63.64%
+2	12aa, >seq_9624|len=12... at 75.00%
+3	12aa, >seq_10335|len=12... at 75.00%
+4	12aa, >seq_10414|len=12... at 75.00%
+5	12aa, >seq_10905|len=12... at 66.67%
+6	12aa, >seq_11031|len=12... at 66.67%
+7	13aa, >seq_12559|len=13... at 61.54%
+8	13aa, >seq_12703|len=13... at 61.54%
+9	13aa, >seq_12746|len=13... at 61.54%
+10	13aa, >seq_13265|len=13... at 61.54%
+11	13aa, >seq_13321|len=13... at 69.23%
+12	13aa, >seq_13330|len=13... at 69.23%
+13	13aa, >seq_13420|len=13... at 76.92%
+14	13aa, >seq_13537|len=13... at 61.54%
+15	13aa, >seq_13551|len=13... at 69.23%
+16	13aa, >seq_13585|len=13... at 61.54%
+17	13aa, >seq_13700|len=13... at 76.92%
+18	13aa, >seq_13852|len=13... at 69.23%
+19	13aa, >seq_14019|len=13... at 61.54%
+20	13aa, >seq_14050|len=13... at 61.54%
+21	13aa, >seq_14304|len=13... at 61.54%
+22	14aa, >seq_14406|len=14... at 85.71%
+23	14aa, >seq_14512|len=14... at 78.57%
+24	14aa, >seq_14689|len=14... at 85.71%
+25	14aa, >seq_14885|len=14... at 71.43%
+26	14aa, >seq_14952|len=14... at 71.43%
+27	14aa, >seq_15187|len=14... at 64.29%
+28	14aa, >seq_15341|len=14... at 71.43%
+29	14aa, >seq_15688|len=14... at 71.43%
+30	15aa, >seq_15692|len=15... at 66.67%
+31	15aa, >seq_16095|len=15... at 60.00%
+32	15aa, >seq_16182|len=15... at 60.00%
+33	15aa, >seq_16820|len=15... at 60.00%
+34	15aa, >seq_17137|len=15... at 60.00%
+35	15aa, >seq_17346|len=15... at 66.67%
+36	16aa, >seq_17562|len=16... at 75.00%
+37	16aa, >seq_17638|len=16... at 75.00%
+38	16aa, >seq_17663|len=16... at 75.00%
+39	16aa, >seq_18002|len=16... at 62.50%
+40	16aa, >seq_18103|len=16... at 68.75%
+41	16aa, >seq_18209|len=16... at 62.50%
+42	17aa, >seq_18881|len=17... at 70.59%
+43	17aa, >seq_18882|len=17... at 76.47%
+44	17aa, >seq_19261|len=17... at 64.71%
+45	17aa, >seq_19281|len=17... at 82.35%
+46	17aa, >seq_19323|len=17... at 70.59%
+47	17aa, >seq_19358|len=17... at 70.59%
+48	17aa, >seq_19401|len=17... at 70.59%
+49	17aa, >seq_19633|len=17... at 70.59%
+50	18aa, >seq_19867|len=18... at 61.11%
+51	18aa, >seq_19956|len=18... at 72.22%
+52	18aa, >seq_20412|len=18... at 61.11%
+53	18aa, >seq_20487|len=18... at 66.67%
+54	18aa, >seq_20490|len=18... at 66.67%
+55	18aa, >seq_20556|len=18... at 72.22%
+56	18aa, >seq_20679|len=18... at 61.11%
+57	18aa, >seq_20793|len=18... at 72.22%
+58	18aa, >seq_20959|len=18... at 66.67%
+59	18aa, >seq_21323|len=18... at 72.22%
+>Cluster 150
+0	18aa, >seq_184|len=18... *
+1	11aa, >seq_9193|len=11... at 72.73%
+2	13aa, >seq_12630|len=13... at 61.54%
+3	13aa, >seq_13342|len=13... at 61.54%
+4	14aa, >seq_14784|len=14... at 78.57%
+5	15aa, >seq_15883|len=15... at 60.00%
+6	18aa, >seq_19894|len=18... at 61.11%
+>Cluster 151
+0	18aa, >seq_198|len=18... *
+1	18aa, >seq_21387|len=18... at 88.89%
+>Cluster 152
+0	18aa, >seq_199|len=18... *
+>Cluster 153
+0	18aa, >seq_200|len=18... *
+>Cluster 154
+0	17aa, >seq_5|len=17... *
+1	11aa, >seq_8099|len=11... at 72.73%
+2	11aa, >seq_8151|len=11... at 72.73%
+3	11aa, >seq_9013|len=11... at 72.73%
+4	11aa, >seq_9045|len=11... at 72.73%
+5	15aa, >seq_17092|len=15... at 60.00%
+6	16aa, >seq_17412|len=16... at 62.50%
+7	17aa, >seq_19103|len=17... at 64.71%
+>Cluster 155
+0	17aa, >seq_31|len=17... *
+1	13aa, >seq_12503|len=13... at 69.23%
+2	13aa, >seq_12570|len=13... at 69.23%
+3	13aa, >seq_12597|len=13... at 61.54%
+4	13aa, >seq_12796|len=13... at 61.54%
+5	13aa, >seq_12824|len=13... at 61.54%
+6	13aa, >seq_13533|len=13... at 69.23%
+7	13aa, >seq_13550|len=13... at 69.23%
+8	17aa, >seq_18971|len=17... at 76.47%
+9	17aa, >seq_18993|len=17... at 70.59%
+10	17aa, >seq_19222|len=17... at 70.59%
+11	17aa, >seq_19539|len=17... at 82.35%
+>Cluster 156
+0	17aa, >seq_47|len=17... *
+>Cluster 157
+0	17aa, >seq_64|len=17... *
+>Cluster 158
+0	17aa, >seq_78|len=17... *
+>Cluster 159
+0	17aa, >seq_124|len=17... *
+1	11aa, >seq_8363|len=11... at 63.64%
+2	12aa, >seq_10089|len=12... at 66.67%
+3	14aa, >seq_15408|len=14... at 64.29%
+4	14aa, >seq_15451|len=14... at 64.29%
+5	15aa, >seq_16276|len=15... at 60.00%
+6	17aa, >seq_18761|len=17... at 76.47%
+7	17aa, >seq_19095|len=17... at 94.12%
+8	17aa, >seq_19187|len=17... at 82.35%
+9	17aa, >seq_19666|len=17... at 76.47%
+>Cluster 160
+0	17aa, >seq_216|len=17... *
+>Cluster 161
+0	17aa, >seq_238|len=17... *
+>Cluster 162
+0	16aa, >seq_13|len=16... *
+1	11aa, >seq_8201|len=11... at 63.64%
+2	13aa, >seq_12895|len=13... at 61.54%
+3	15aa, >seq_15887|len=15... at 60.00%
+>Cluster 163
+0	16aa, >seq_73|len=16... *
+1	13aa, >seq_13475|len=13... at 69.23%
+>Cluster 164
+0	16aa, >seq_74|len=16... *
+1	11aa, >seq_7981|len=11... at 72.73%
+2	13aa, >seq_14212|len=13... at 61.54%
+>Cluster 165
+0	16aa, >seq_75|len=16... *
+1	13aa, >seq_14387|len=13... at 61.54%
+>Cluster 166
+0	16aa, >seq_76|len=16... *
+>Cluster 167
+0	16aa, >seq_77|len=16... *
+>Cluster 168
+0	16aa, >seq_160|len=16... *
+>Cluster 169
+0	16aa, >seq_166|len=16... *
+1	14aa, >seq_14731|len=14... at 64.29%
+>Cluster 170
+0	16aa, >seq_168|len=16... *
+>Cluster 171
+0	16aa, >seq_169|len=16... *
+1	11aa, >seq_9314|len=11... at 63.64%
+>Cluster 172
+0	16aa, >seq_170|len=16... *
+>Cluster 173
+0	16aa, >seq_171|len=16... *
+>Cluster 174
+0	16aa, >seq_183|len=16... *
+1	11aa, >seq_9091|len=11... at 63.64%
+2	13aa, >seq_13481|len=13... at 69.23%
+>Cluster 175
+0	16aa, >seq_190|len=16... *
+1	11aa, >seq_8412|len=11... at 63.64%
+2	11aa, >seq_9263|len=11... at 72.73%
+3	13aa, >seq_13193|len=13... at 61.54%
+4	13aa, >seq_13488|len=13... at 61.54%
+5	16aa, >seq_18509|len=16... at 62.50%
+>Cluster 176
+0	16aa, >seq_224|len=16... *
+1	16aa, >seq_17975|len=16... at 68.75%
+>Cluster 177
+0	16aa, >seq_237|len=16... *
+>Cluster 178
+0	15aa, >seq_4|len=15... *
+1	11aa, >seq_8974|len=11... at 63.64%
+2	12aa, >seq_9463|len=12... at 66.67%
+3	12aa, >seq_9577|len=12... at 66.67%
+4	12aa, >seq_9707|len=12... at 66.67%
+>Cluster 179
+0	15aa, >seq_25|len=15... *
+>Cluster 180
+0	15aa, >seq_26|len=15... *
+1	14aa, >seq_15309|len=14... at 64.29%
+>Cluster 181
+0	15aa, >seq_45|len=15... *
+1	15aa, >seq_15856|len=15... at 73.33%
+>Cluster 182
+0	15aa, >seq_142|len=15... *
+1	11aa, >seq_8095|len=11... at 63.64%
+2	12aa, >seq_9411|len=12... at 75.00%
+3	15aa, >seq_16422|len=15... at 60.00%
+>Cluster 183
+0	15aa, >seq_144|len=15... *
+1	12aa, >seq_11885|len=12... at 91.67%
+>Cluster 184
+0	15aa, >seq_157|len=15... *
+1	12aa, >seq_9366|len=12... at 66.67%
+2	12aa, >seq_11416|len=12... at 75.00%
+3	13aa, >seq_12554|len=13... at 69.23%
+4	14aa, >seq_14469|len=14... at 64.29%
+5	14aa, >seq_14474|len=14... at 64.29%
+6	14aa, >seq_14485|len=14... at 78.57%
+7	14aa, >seq_14761|len=14... at 78.57%
+8	14aa, >seq_15322|len=14... at 71.43%
+9	14aa, >seq_15500|len=14... at 71.43%
+10	15aa, >seq_15719|len=15... at 73.33%
+11	15aa, >seq_15850|len=15... at 66.67%
+12	15aa, >seq_15864|len=15... at 66.67%
+13	15aa, >seq_16263|len=15... at 73.33%
+14	15aa, >seq_16361|len=15... at 66.67%
+15	15aa, >seq_16561|len=15... at 60.00%
+16	15aa, >seq_16608|len=15... at 60.00%
+17	15aa, >seq_16634|len=15... at 60.00%
+18	15aa, >seq_16808|len=15... at 60.00%
+19	15aa, >seq_16868|len=15... at 60.00%
+20	15aa, >seq_17035|len=15... at 60.00%
+>Cluster 185
+0	15aa, >seq_172|len=15... *
+>Cluster 186
+0	15aa, >seq_177|len=15... *
+1	14aa, >seq_14418|len=14... at 71.43%
+2	15aa, >seq_15806|len=15... at 73.33%
+3	15aa, >seq_16224|len=15... at 60.00%
+4	15aa, >seq_16229|len=15... at 60.00%
+5	15aa, >seq_16446|len=15... at 66.67%
+6	15aa, >seq_16750|len=15... at 66.67%
+7	15aa, >seq_17244|len=15... at 73.33%
+8	15aa, >seq_17273|len=15... at 73.33%
+>Cluster 187
+0	15aa, >seq_204|len=15... *
+1	11aa, >seq_8211|len=11... at 63.64%
+2	11aa, >seq_8457|len=11... at 63.64%
+3	12aa, >seq_9569|len=12... at 66.67%
+4	12aa, >seq_10885|len=12... at 66.67%
+5	12aa, >seq_11582|len=12... at 66.67%
+6	13aa, >seq_12553|len=13... at 61.54%
+7	13aa, >seq_12679|len=13... at 61.54%
+8	13aa, >seq_12785|len=13... at 61.54%
+9	13aa, >seq_12814|len=13... at 69.23%
+10	13aa, >seq_13210|len=13... at 69.23%
+11	13aa, >seq_13429|len=13... at 69.23%
+12	13aa, >seq_13767|len=13... at 69.23%
+13	15aa, >seq_15961|len=15... at 60.00%
+>Cluster 188
+0	15aa, >seq_217|len=15... *
+1	13aa, >seq_13467|len=13... at 61.54%
+>Cluster 189
+0	15aa, >seq_227|len=15... *
+1	11aa, >seq_9200|len=11... at 72.73%
+2	13aa, >seq_12511|len=13... at 69.23%
+3	13aa, >seq_12816|len=13... at 76.92%
+4	13aa, >seq_13198|len=13... at 69.23%
+5	13aa, >seq_13200|len=13... at 76.92%
+6	13aa, >seq_13386|len=13... at 84.62%
+7	13aa, >seq_13393|len=13... at 61.54%
+8	13aa, >seq_13712|len=13... at 84.62%
+9	13aa, >seq_13898|len=13... at 69.23%
+10	13aa, >seq_14248|len=13... at 76.92%
+11	14aa, >seq_15489|len=14... at 92.86%
+12	15aa, >seq_16058|len=15... at 73.33%
+>Cluster 190
+0	15aa, >seq_243|len=15... *
+1	11aa, >seq_8317|len=11... at 72.73%
+2	11aa, >seq_8736|len=11... at 72.73%
+>Cluster 191
+0	15aa, >seq_244|len=15... *
+>Cluster 192
+0	15aa, >seq_245|len=15... *
+1	11aa, >seq_8035|len=11... at 72.73%
+2	14aa, >seq_15001|len=14... at 64.29%
+>Cluster 193
+0	15aa, >seq_246|len=15... *
+1	11aa, >seq_8674|len=11... at 90.91%
+2	11aa, >seq_9297|len=11... at 81.82%
+3	13aa, >seq_12663|len=13... at 61.54%
+4	13aa, >seq_14303|len=13... at 69.23%
+5	14aa, >seq_15070|len=14... at 64.29%
+6	14aa, >seq_15387|len=14... at 64.29%
+>Cluster 194
+0	15aa, >seq_247|len=15... *
+1	11aa, >seq_8214|len=11... at 63.64%
+2	11aa, >seq_8531|len=11... at 63.64%
+3	11aa, >seq_8780|len=11... at 72.73%
+4	13aa, >seq_13951|len=13... at 69.23%
+>Cluster 195
+0	15aa, >seq_248|len=15... *
+1	11aa, >seq_9102|len=11... at 63.64%
+2	13aa, >seq_12516|len=13... at 61.54%
+3	13aa, >seq_12909|len=13... at 61.54%
+>Cluster 196
+0	15aa, >seq_249|len=15... *
+1	14aa, >seq_15147|len=14... at 64.29%
+2	14aa, >seq_15275|len=14... at 64.29%
+3	15aa, >seq_16348|len=15... at 60.00%
+>Cluster 197
+0	15aa, >seq_250|len=15... *
+1	15aa, >seq_16093|len=15... at 60.00%
+>Cluster 198
+0	15aa, >seq_253|len=15... *
+1	13aa, >seq_14395|len=13... at 61.54%
+2	14aa, >seq_15613|len=14... at 71.43%
+3	15aa, >seq_17081|len=15... at 73.33%
+>Cluster 199
+0	14aa, >seq_43|len=14... *
+1	12aa, >seq_10953|len=12... at 66.67%
+2	14aa, >seq_14547|len=14... at 64.29%
+3	14aa, >seq_14830|len=14... at 71.43%
+>Cluster 200
+0	14aa, >seq_179|len=14... *
+1	12aa, >seq_10075|len=12... at 66.67%
+2	12aa, >seq_10247|len=12... at 75.00%
+3	12aa, >seq_11088|len=12... at 66.67%
+>Cluster 201
+0	14aa, >seq_182|len=14... *
+>Cluster 202
+0	14aa, >seq_185|len=14... *
+1	14aa, >seq_15334|len=14... at 64.29%
+>Cluster 203
+0	14aa, >seq_203|len=14... *
+1	11aa, >seq_8188|len=11... at 63.64%
+2	11aa, >seq_8321|len=11... at 72.73%
+3	11aa, >seq_9190|len=11... at 81.82%
+4	12aa, >seq_10902|len=12... at 75.00%
+5	12aa, >seq_11901|len=12... at 66.67%
+6	13aa, >seq_12520|len=13... at 69.23%
+7	13aa, >seq_12524|len=13... at 61.54%
+8	13aa, >seq_12781|len=13... at 61.54%
+9	13aa, >seq_13286|len=13... at 69.23%
+10	13aa, >seq_13899|len=13... at 69.23%
+11	14aa, >seq_15523|len=14... at 64.29%
+>Cluster 204
+0	14aa, >seq_212|len=14... *
+>Cluster 205
+0	14aa, >seq_264|len=14... *
+1	12aa, >seq_11143|len=12... at 100.00%
+2	14aa, >seq_15679|len=14... at 64.29%
+>Cluster 206
+0	13aa, >seq_120|len=13... *
+1	11aa, >seq_7987|len=11... at 63.64%
+2	11aa, >seq_8084|len=11... at 63.64%
+3	11aa, >seq_8120|len=11... at 63.64%
+4	11aa, >seq_8125|len=11... at 63.64%
+5	11aa, >seq_8241|len=11... at 63.64%
+6	11aa, >seq_8254|len=11... at 63.64%
+7	11aa, >seq_8304|len=11... at 63.64%
+8	11aa, >seq_8329|len=11... at 63.64%
+9	11aa, >seq_8332|len=11... at 63.64%
+10	11aa, >seq_8373|len=11... at 63.64%
+11	11aa, >seq_8403|len=11... at 63.64%
+12	11aa, >seq_8404|len=11... at 72.73%
+13	11aa, >seq_8417|len=11... at 63.64%
+14	11aa, >seq_8435|len=11... at 63.64%
+15	11aa, >seq_8443|len=11... at 63.64%
+16	11aa, >seq_8465|len=11... at 63.64%
+17	11aa, >seq_8528|len=11... at 63.64%
+18	11aa, >seq_8537|len=11... at 63.64%
+19	11aa, >seq_8546|len=11... at 63.64%
+20	11aa, >seq_8547|len=11... at 63.64%
+21	11aa, >seq_8550|len=11... at 63.64%
+22	11aa, >seq_8650|len=11... at 63.64%
+23	11aa, >seq_8676|len=11... at 72.73%
+24	11aa, >seq_8760|len=11... at 63.64%
+25	11aa, >seq_8790|len=11... at 63.64%
+26	11aa, >seq_8796|len=11... at 63.64%
+27	11aa, >seq_8826|len=11... at 63.64%
+28	11aa, >seq_8877|len=11... at 63.64%
+29	11aa, >seq_8901|len=11... at 63.64%
+30	11aa, >seq_8917|len=11... at 63.64%
+31	11aa, >seq_8997|len=11... at 63.64%
+32	11aa, >seq_9050|len=11... at 63.64%
+33	11aa, >seq_9229|len=11... at 63.64%
+34	11aa, >seq_9231|len=11... at 63.64%
+35	11aa, >seq_9266|len=11... at 63.64%
+36	11aa, >seq_9291|len=11... at 63.64%
+37	11aa, >seq_9341|len=11... at 63.64%
+38	12aa, >seq_10954|len=12... at 75.00%
+39	13aa, >seq_12457|len=13... at 92.31%
+40	13aa, >seq_14173|len=13... at 84.62%
+>Cluster 207
+0	13aa, >seq_133|len=13... *
+1	11aa, >seq_8586|len=11... at 63.64%
+2	13aa, >seq_14132|len=13... at 61.54%
+>Cluster 208
+0	13aa, >seq_134|len=13... *
+1	13aa, >seq_12717|len=13... at 61.54%
+>Cluster 209
+0	13aa, >seq_135|len=13... *
+1	12aa, >seq_11969|len=12... at 66.67%
+2	13aa, >seq_12640|len=13... at 61.54%
+3	13aa, >seq_12833|len=13... at 61.54%
+4	13aa, >seq_12928|len=13... at 69.23%
+5	13aa, >seq_12970|len=13... at 69.23%
+6	13aa, >seq_13511|len=13... at 69.23%
+7	13aa, >seq_13964|len=13... at 61.54%
+8	13aa, >seq_14062|len=13... at 61.54%
+9	13aa, >seq_14289|len=13... at 69.23%
+10	13aa, >seq_14381|len=13... at 76.92%
+>Cluster 210
+0	13aa, >seq_136|len=13... *
+1	13aa, >seq_12387|len=13... at 84.62%
+>Cluster 211
+0	13aa, >seq_137|len=13... *
+1	13aa, >seq_12558|len=13... at 76.92%
+2	13aa, >seq_13807|len=13... at 84.62%
+>Cluster 212
+0	13aa, >seq_150|len=13... *
+1	11aa, >seq_8198|len=11... at 63.64%
+2	11aa, >seq_8351|len=11... at 63.64%
+3	11aa, >seq_8406|len=11... at 63.64%
+4	11aa, >seq_8496|len=11... at 63.64%
+5	11aa, >seq_9056|len=11... at 63.64%
+6	13aa, >seq_12829|len=13... at 61.54%
+>Cluster 213
+0	13aa, >seq_152|len=13... *
+1	11aa, >seq_8111|len=11... at 72.73%
+2	11aa, >seq_8407|len=11... at 63.64%
+3	13aa, >seq_12616|len=13... at 76.92%
+4	13aa, >seq_12912|len=13... at 69.23%
+>Cluster 214
+0	13aa, >seq_156|len=13... *
+1	13aa, >seq_14321|len=13... at 61.54%
+>Cluster 215
+0	13aa, >seq_178|len=13... *
+1	11aa, >seq_9112|len=11... at 72.73%
+2	12aa, >seq_11227|len=12... at 66.67%
+3	13aa, >seq_12473|len=13... at 61.54%
+4	13aa, >seq_12478|len=13... at 61.54%
+5	13aa, >seq_12941|len=13... at 69.23%
+>Cluster 216
+0	13aa, >seq_181|len=13... *
+>Cluster 217
+0	13aa, >seq_187|len=13... *
+1	11aa, >seq_8716|len=11... at 63.64%
+>Cluster 218
+0	13aa, >seq_206|len=13... *
+1	11aa, >seq_9316|len=11... at 63.64%
+>Cluster 219
+0	13aa, >seq_207|len=13... *
+>Cluster 220
+0	13aa, >seq_210|len=13... *
+1	12aa, >seq_11400|len=12... at 75.00%
+2	12aa, >seq_11611|len=12... at 66.67%
+3	13aa, >seq_14166|len=13... at 61.54%
+>Cluster 221
+0	13aa, >seq_218|len=13... *
+>Cluster 222
+0	13aa, >seq_251|len=13... *
+>Cluster 223
+0	13aa, >seq_252|len=13... *
+>Cluster 224
+0	13aa, >seq_254|len=13... *
+1	11aa, >seq_8032|len=11... at 63.64%
+2	11aa, >seq_8109|len=11... at 72.73%
+3	11aa, >seq_8154|len=11... at 81.82%
+4	12aa, >seq_9544|len=12... at 66.67%
+5	12aa, >seq_10639|len=12... at 83.33%
+6	12aa, >seq_11198|len=12... at 75.00%
+7	12aa, >seq_11849|len=12... at 83.33%
+8	13aa, >seq_13972|len=13... at 92.31%
+9	13aa, >seq_14137|len=13... at 76.92%
+>Cluster 225
+0	13aa, >seq_255|len=13... *
+1	11aa, >seq_8252|len=11... at 63.64%
+2	12aa, >seq_11860|len=12... at 66.67%
+>Cluster 226
+0	13aa, >seq_265|len=13... *
+1	12aa, >seq_9885|len=12... at 66.67%
+>Cluster 227
+0	12aa, >seq_23|len=12... *
+1	11aa, >seq_8194|len=11... at 100.00%
+2	12aa, >seq_10630|len=12... at 66.67%
+>Cluster 228
+0	12aa, >seq_42|len=12... *
+1	11aa, >seq_8187|len=11... at 72.73%
+2	12aa, >seq_11441|len=12... at 83.33%
+3	12aa, >seq_11511|len=12... at 75.00%
+>Cluster 229
+0	12aa, >seq_46|len=12... *
+1	12aa, >seq_12293|len=12... at 66.67%
+>Cluster 230
+0	12aa, >seq_68|len=12... *
+1	12aa, >seq_11387|len=12... at 83.33%
+2	12aa, >seq_12188|len=12... at 83.33%
+>Cluster 231
+0	12aa, >seq_69|len=12... *
+>Cluster 232
+0	12aa, >seq_141|len=12... *
+>Cluster 233
+0	12aa, >seq_197|len=12... *
+>Cluster 234
+0	12aa, >seq_202|len=12... *
+1	11aa, >seq_8026|len=11... at 63.64%
+2	11aa, >seq_8937|len=11... at 63.64%
+>Cluster 235
+0	12aa, >seq_219|len=12... *
+1	12aa, >seq_9701|len=12... at 75.00%
+2	12aa, >seq_11902|len=12... at 66.67%
+3	12aa, >seq_12073|len=12... at 66.67%
+4	12aa, >seq_12075|len=12... at 91.67%
+5	12aa, >seq_12342|len=12... at 75.00%
+>Cluster 236
+0	12aa, >seq_232|len=12... *
+1	12aa, >seq_10523|len=12... at 66.67%
+>Cluster 237
+0	12aa, >seq_233|len=12... *
+1	12aa, >seq_10748|len=12... at 75.00%
+>Cluster 238
+0	12aa, >seq_259|len=12... *
+1	11aa, >seq_8098|len=11... at 63.64%
+2	11aa, >seq_8704|len=11... at 63.64%
+3	12aa, >seq_9845|len=12... at 66.67%
+4	12aa, >seq_12204|len=12... at 66.67%
+5	12aa, >seq_12245|len=12... at 83.33%
+>Cluster 239
+0	11aa, >seq_151|len=11... *
+>Cluster 240
+0	11aa, >seq_154|len=11... *
+1	11aa, >seq_8922|len=11... at 81.82%
+2	11aa, >seq_8965|len=11... at 63.64%
+3	11aa, >seq_8971|len=11... at 72.73%
+4	11aa, >seq_9096|len=11... at 63.64%
+5	11aa, >seq_9256|len=11... at 63.64%
+>Cluster 241
+0	11aa, >seq_159|len=11... *
+>Cluster 242
+0	11aa, >seq_161|len=11... *
+>Cluster 243
+0	11aa, >seq_228|len=11... *
+1	11aa, >seq_9285|len=11... at 63.64%
