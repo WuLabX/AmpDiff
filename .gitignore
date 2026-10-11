@@ -30,7 +30,12 @@ env/
 wandb/
 runs/
 
-# Model checkpoints
-*.pt
-*.pth
-*.ckpt
+# ========== 屏蔽不需要上传的巨型checkpoint目录（把不提交的pt放这里） ==========
+large_checkpoints/
+
+# ========== 屏蔽超过100MB巨型csv，不上传GitHub ==========
+"raw dataset/amp_confirmed_binary.csv"
+"raw dataset/amp_predicted_binary.csv"
+"raw dataset/amp_evidence_long.csv"
+
+# ========== 注意：删除 *.pt *.pth *.ckpt 全局屏蔽！需要上传的pt交给git‑lfs跟踪 ==========
