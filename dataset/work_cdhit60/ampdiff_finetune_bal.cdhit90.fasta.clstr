@@ -1,0 +1,330 @@
+>Cluster 0
+0	42aa, >seq_206|len=42... *
+1	42aa, >seq_207|len=42... at 97.62%
+>Cluster 1
+0	40aa, >seq_205|len=40... *
+>Cluster 2
+0	39aa, >seq_204|len=39... *
+>Cluster 3
+0	35aa, >seq_197|len=35... at 94.29%
+1	37aa, >seq_202|len=37... *
+2	37aa, >seq_203|len=37... at 94.59%
+>Cluster 4
+0	36aa, >seq_198|len=36... *
+>Cluster 5
+0	12aa, >seq_25|len=12... at 100.00%
+1	12aa, >seq_31|len=12... at 100.00%
+2	15aa, >seq_71|len=15... at 100.00%
+3	16aa, >seq_75|len=16... at 93.75%
+4	16aa, >seq_79|len=16... at 93.75%
+5	16aa, >seq_83|len=16... at 93.75%
+6	16aa, >seq_93|len=16... at 100.00%
+7	18aa, >seq_109|len=18... at 100.00%
+8	20aa, >seq_126|len=20... at 100.00%
+9	21aa, >seq_129|len=21... at 100.00%
+10	24aa, >seq_139|len=24... at 95.83%
+11	24aa, >seq_141|len=24... at 100.00%
+12	24aa, >seq_142|len=24... at 95.83%
+13	24aa, >seq_147|len=24... at 95.83%
+14	34aa, >seq_196|len=34... at 94.12%
+15	36aa, >seq_199|len=36... *
+16	36aa, >seq_200|len=36... at 94.44%
+17	36aa, >seq_201|len=36... at 94.44%
+>Cluster 6
+0	20aa, >seq_124|len=20... at 100.00%
+1	34aa, >seq_195|len=34... *
+>Cluster 7
+0	32aa, >seq_187|len=32... *
+>Cluster 8
+0	32aa, >seq_188|len=32... *
+>Cluster 9
+0	32aa, >seq_189|len=32... *
+1	32aa, >seq_192|len=32... at 90.62%
+2	32aa, >seq_194|len=32... at 90.62%
+>Cluster 10
+0	32aa, >seq_190|len=32... *
+>Cluster 11
+0	32aa, >seq_191|len=32... *
+>Cluster 12
+0	32aa, >seq_193|len=32... *
+>Cluster 13
+0	16aa, >seq_80|len=16... at 100.00%
+1	31aa, >seq_185|len=31... *
+>Cluster 14
+0	31aa, >seq_186|len=31... *
+>Cluster 15
+0	30aa, >seq_183|len=30... *
+>Cluster 16
+0	30aa, >seq_184|len=30... *
+>Cluster 17
+0	29aa, >seq_181|len=29... *
+>Cluster 18
+0	29aa, >seq_182|len=29... *
+>Cluster 19
+0	28aa, >seq_166|len=28... *
+>Cluster 20
+0	28aa, >seq_167|len=28... *
+1	28aa, >seq_171|len=28... at 92.86%
+>Cluster 21
+0	28aa, >seq_168|len=28... *
+1	28aa, >seq_180|len=28... at 92.86%
+>Cluster 22
+0	28aa, >seq_169|len=28... *
+1	28aa, >seq_170|len=28... at 96.43%
+>Cluster 23
+0	28aa, >seq_172|len=28... *
+>Cluster 24
+0	28aa, >seq_173|len=28... *
+>Cluster 25
+0	28aa, >seq_174|len=28... *
+>Cluster 26
+0	28aa, >seq_175|len=28... *
+>Cluster 27
+0	28aa, >seq_176|len=28... *
+>Cluster 28
+0	28aa, >seq_177|len=28... *
+>Cluster 29
+0	28aa, >seq_178|len=28... *
+>Cluster 30
+0	28aa, >seq_179|len=28... *
+>Cluster 31
+0	27aa, >seq_164|len=27... *
+>Cluster 32
+0	27aa, >seq_165|len=27... *
+>Cluster 33
+0	26aa, >seq_161|len=26... *
+>Cluster 34
+0	26aa, >seq_162|len=26... *
+>Cluster 35
+0	26aa, >seq_163|len=26... *
+>Cluster 36
+0	25aa, >seq_148|len=25... *
+>Cluster 37
+0	25aa, >seq_149|len=25... *
+1	25aa, >seq_153|len=25... at 92.00%
+>Cluster 38
+0	25aa, >seq_150|len=25... *
+1	25aa, >seq_151|len=25... at 92.00%
+2	25aa, >seq_154|len=25... at 92.00%
+3	25aa, >seq_155|len=25... at 92.00%
+4	25aa, >seq_156|len=25... at 96.00%
+5	25aa, >seq_159|len=25... at 96.00%
+6	25aa, >seq_160|len=25... at 96.00%
+>Cluster 39
+0	25aa, >seq_152|len=25... *
+>Cluster 40
+0	25aa, >seq_157|len=25... *
+>Cluster 41
+0	25aa, >seq_158|len=25... *
+>Cluster 42
+0	24aa, >seq_136|len=24... *
+>Cluster 43
+0	18aa, >seq_110|len=18... at 94.44%
+1	24aa, >seq_137|len=24... *
+2	24aa, >seq_140|len=24... at 95.83%
+>Cluster 44
+0	24aa, >seq_138|len=24... *
+>Cluster 45
+0	24aa, >seq_143|len=24... *
+>Cluster 46
+0	24aa, >seq_144|len=24... *
+>Cluster 47
+0	24aa, >seq_145|len=24... *
+1	24aa, >seq_146|len=24... at 95.83%
+>Cluster 48
+0	23aa, >seq_130|len=23... *
+>Cluster 49
+0	23aa, >seq_131|len=23... *
+1	23aa, >seq_132|len=23... at 91.30%
+2	23aa, >seq_133|len=23... at 91.30%
+3	23aa, >seq_134|len=23... at 95.65%
+>Cluster 50
+0	19aa, >seq_121|len=19... at 100.00%
+1	23aa, >seq_135|len=23... *
+>Cluster 51
+0	21aa, >seq_128|len=21... *
+>Cluster 52
+0	20aa, >seq_123|len=20... *
+>Cluster 53
+0	20aa, >seq_125|len=20... *
+>Cluster 54
+0	20aa, >seq_127|len=20... *
+>Cluster 55
+0	19aa, >seq_119|len=19... *
+>Cluster 56
+0	12aa, >seq_16|len=12... at 100.00%
+1	19aa, >seq_120|len=19... *
+>Cluster 57
+0	19aa, >seq_122|len=19... *
+>Cluster 58
+0	18aa, >seq_106|len=18... *
+>Cluster 59
+0	18aa, >seq_107|len=18... *
+>Cluster 60
+0	11aa, >seq_14|len=11... at 90.91%
+1	15aa, >seq_65|len=15... at 93.33%
+2	18aa, >seq_108|len=18... *
+>Cluster 61
+0	18aa, >seq_111|len=18... *
+>Cluster 62
+0	18aa, >seq_112|len=18... *
+>Cluster 63
+0	18aa, >seq_113|len=18... *
+>Cluster 64
+0	18aa, >seq_114|len=18... *
+>Cluster 65
+0	18aa, >seq_115|len=18... *
+>Cluster 66
+0	18aa, >seq_116|len=18... *
+>Cluster 67
+0	18aa, >seq_117|len=18... *
+>Cluster 68
+0	18aa, >seq_118|len=18... *
+>Cluster 69
+0	17aa, >seq_98|len=17... *
+>Cluster 70
+0	17aa, >seq_99|len=17... *
+1	17aa, >seq_103|len=17... at 94.12%
+>Cluster 71
+0	17aa, >seq_100|len=17... *
+>Cluster 72
+0	13aa, >seq_52|len=13... at 100.00%
+1	17aa, >seq_101|len=17... *
+2	17aa, >seq_105|len=17... at 94.12%
+>Cluster 73
+0	17aa, >seq_102|len=17... *
+>Cluster 74
+0	17aa, >seq_104|len=17... *
+>Cluster 75
+0	16aa, >seq_72|len=16... *
+1	16aa, >seq_86|len=16... at 93.75%
+>Cluster 76
+0	16aa, >seq_73|len=16... *
+1	16aa, >seq_90|len=16... at 93.75%
+>Cluster 77
+0	16aa, >seq_74|len=16... *
+>Cluster 78
+0	16aa, >seq_76|len=16... *
+>Cluster 79
+0	16aa, >seq_77|len=16... *
+>Cluster 80
+0	16aa, >seq_78|len=16... *
+>Cluster 81
+0	16aa, >seq_81|len=16... *
+>Cluster 82
+0	16aa, >seq_82|len=16... *
+1	16aa, >seq_88|len=16... at 93.75%
+>Cluster 83
+0	16aa, >seq_84|len=16... *
+>Cluster 84
+0	16aa, >seq_85|len=16... *
+>Cluster 85
+0	13aa, >seq_43|len=13... at 100.00%
+1	16aa, >seq_87|len=16... *
+>Cluster 86
+0	16aa, >seq_89|len=16... *
+>Cluster 87
+0	16aa, >seq_91|len=16... *
+>Cluster 88
+0	16aa, >seq_92|len=16... *
+>Cluster 89
+0	16aa, >seq_94|len=16... *
+>Cluster 90
+0	16aa, >seq_95|len=16... *
+>Cluster 91
+0	16aa, >seq_96|len=16... *
+>Cluster 92
+0	16aa, >seq_97|len=16... *
+>Cluster 93
+0	15aa, >seq_56|len=15... *
+1	15aa, >seq_59|len=15... at 93.33%
+2	15aa, >seq_63|len=15... at 93.33%
+>Cluster 94
+0	15aa, >seq_57|len=15... *
+>Cluster 95
+0	15aa, >seq_58|len=15... *
+1	15aa, >seq_70|len=15... at 93.33%
+>Cluster 96
+0	15aa, >seq_60|len=15... *
+1	15aa, >seq_67|len=15... at 93.33%
+>Cluster 97
+0	15aa, >seq_61|len=15... *
+>Cluster 98
+0	15aa, >seq_62|len=15... *
+>Cluster 99
+0	15aa, >seq_64|len=15... *
+>Cluster 100
+0	15aa, >seq_66|len=15... *
+>Cluster 101
+0	15aa, >seq_68|len=15... *
+>Cluster 102
+0	15aa, >seq_69|len=15... *
+>Cluster 103
+0	13aa, >seq_35|len=13... at 100.00%
+1	14aa, >seq_55|len=14... *
+>Cluster 104
+0	13aa, >seq_32|len=13... *
+>Cluster 105
+0	13aa, >seq_33|len=13... *
+>Cluster 106
+0	12aa, >seq_18|len=12... at 100.00%
+1	13aa, >seq_34|len=13... *
+>Cluster 107
+0	13aa, >seq_36|len=13... *
+1	13aa, >seq_40|len=13... at 92.31%
+2	13aa, >seq_49|len=13... at 92.31%
+>Cluster 108
+0	13aa, >seq_37|len=13... *
+>Cluster 109
+0	13aa, >seq_38|len=13... *
+>Cluster 110
+0	13aa, >seq_39|len=13... *
+>Cluster 111
+0	13aa, >seq_41|len=13... *
+>Cluster 112
+0	13aa, >seq_42|len=13... *
+>Cluster 113
+0	13aa, >seq_44|len=13... *
+1	13aa, >seq_45|len=13... at 92.31%
+>Cluster 114
+0	13aa, >seq_46|len=13... *
+>Cluster 115
+0	13aa, >seq_47|len=13... *
+>Cluster 116
+0	13aa, >seq_48|len=13... *
+>Cluster 117
+0	13aa, >seq_50|len=13... *
+>Cluster 118
+0	13aa, >seq_51|len=13... *
+>Cluster 119
+0	13aa, >seq_53|len=13... *
+>Cluster 120
+0	13aa, >seq_54|len=13... *
+>Cluster 121
+0	12aa, >seq_15|len=12... *
+>Cluster 122
+0	12aa, >seq_17|len=12... *
+>Cluster 123
+0	12aa, >seq_19|len=12... *
+1	12aa, >seq_21|len=12... at 91.67%
+>Cluster 124
+0	12aa, >seq_20|len=12... *
+1	12aa, >seq_24|len=12... at 91.67%
+>Cluster 125
+0	12aa, >seq_22|len=12... *
+>Cluster 126
+0	12aa, >seq_23|len=12... *
+>Cluster 127
+0	12aa, >seq_26|len=12... *
+>Cluster 128
+0	12aa, >seq_27|len=12... *
+>Cluster 129
+0	12aa, >seq_28|len=12... *
+>Cluster 130
+0	12aa, >seq_29|len=12... *
+>Cluster 131
+0	12aa, >seq_30|len=12... *
+>Cluster 132
+0	11aa, >seq_12|len=11... *
+>Cluster 133
+0	11aa, >seq_13|len=11... *
