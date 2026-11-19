@@ -236,10 +236,10 @@ If you use AmpDiff in your research, please cite this repository or the
 corresponding AmpDiff manuscript when available.
 
 ```bibtex
-@article{Hudiff_reuse,
-  title = {Pushing adaptive autoregressive diffusion to its limits from antibody humanization to antimicrobial peptide design},
+@article{HAmpDiff,
+  title = {Function-aware autoregressive diffusion enables safe and efficient antimicrobial peptide optimization},
   author = {Wu, Chuya},
-  journal = {Nat. Mach. Intell.},
+  journal = {Brief. Bioinform.},
   year = {2026}
 }
 ```
