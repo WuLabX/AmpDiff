@@ -60,19 +60,14 @@ processed outputs to `data/`.
 
 ## Pretraining
 
-AmpDiff uses a two-stage pretraining workflow.
-
-Resources:
-
-- Raw data (download link to be added)
-- Pretraining checkpoints (download link to be added)
+AmpDiff uses a two-stage pretraining (`stage 1`/`stage 2`) workflow and provides two independent usage paths (`A`/`B`).
 
 ### Path A: Raw-data retraining
 
 Use this path when you want to rebuild the processed AMP datasets and train
 both pretraining stages from raw AMP records.
 
-1. Download the raw data and place the files under `raw dataset/`.
+1. Download the [raw data](https://doi.org/10.5281/zenodo.24358304) and place the files under `raw dataset/`.
 2. Build the processed datasets:
 
 ```bash
@@ -83,13 +78,13 @@ python dataset/prepare_ampdiff_datasets.py \
   --motif-dir data/motif
 ```
 
-3. Run stage 1 on the broad AMP pretraining set:
+3. Run `stage 1` on the broad AMP pretraining set:
 
 ```bash
 bash amp_scripts/run_pretrain_stage1_all.sh
 ```
 
-4. Run stage 2, which initializes from the stage 1 checkpoint and trains on
+4. Run `stage 2`, which initializes from the stage 1 checkpoint and trains on
    the active-motif subset:
 
 ```bash
@@ -124,7 +119,7 @@ python amp_scripts/amp_train.py \
 Use this path when you want to skip pretraining and start from released
 weights.
 
-1. Download the pretraining checkpoints (download link to be added).
+1. Download the [pretraining checkpoints](https://doi.org/10.5281/zenodo.24358304).
 2. Place the checkpoint files at:
 
 ```text
@@ -149,18 +144,13 @@ Optional hemolysis guidance is provided by:
 
 - [HemoPI2](https://github.com/raghavagps/hemopi2)
 
-Resources:
-
-- Raw data (download link to be added)
-- Finetuned checkpoints (download link to be added)
-
 ### Path A: Raw-data retraining
 
 Use this path when you want to build the supervised finetuning datasets and
 train the `act` and `bal` models. Complete either pretraining path first so
 that `checkpoints/pretrain/stage2_motif.pt` is available.
 
-1. Download the raw data and place the files under `raw dataset/`.
+1. Download the [raw data](https://doi.org/10.5281/zenodo.24358304) and place the files under `raw dataset/`.
 2. Build the processed datasets if they have not already been prepared:
 
 ```bash
@@ -204,7 +194,7 @@ The canonical finetuned checkpoints are written to:
 Use this path when you want to skip finetuning and directly run sampling or
 evaluation from released weights.
 
-1. Download the finetuned checkpoints (download link to be added).
+1. Download the [finetuned checkpoints](https://doi.org/10.5281/zenodo.24358304).
 2. Place the checkpoint files at:
 
 ```text
