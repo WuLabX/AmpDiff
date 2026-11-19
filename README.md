@@ -103,10 +103,14 @@ python amp_scripts/amp_train.py \
 Finetuning uses supervised AMP activity data and one selectable activity
 guidance predictor. Supported activity guidance predictors are:
 
-- `pepnet`
-- `amppred_mfa`
-- `iamp_attenpred`
-- `unidl4biopep`
+- [PepNet](https://github.com/Harkool/PepNet)
+- [AMPpred-MFA](https://github.com/Jiangle525/AMPpred-MFA)
+- [iAMP-Attenpred](https://github.com/xingwxzz/iAMP-Attenpred)
+- [UniDL4BioPep](https://github.com/dzjxzyd/UniDL4BioPep)
+
+Optional hemolysis guidance is provided by:
+
+- [HemoPI2](https://github.com/raghavagps/hemopi2)
 
 Finetune the `act` model:
 
@@ -230,3 +234,12 @@ independent post-generation evaluation.
 
 If you use AmpDiff in your research, please cite this repository or the
 corresponding AmpDiff manuscript when available.
+
+```bibtex
+@article{Hudiff_reuse,
+  title = {Pushing adaptive autoregressive diffusion to its limits from antibody humanization to antimicrobial peptide design},
+  author = {Wu, Chuya},
+  journal = {Nat. Mach. Intell.},
+  year = {2026}
+}
+```
