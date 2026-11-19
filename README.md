@@ -69,40 +69,11 @@ Predictor repositories:
 - [UniDL4BioPep](https://github.com/dzjxzyd/UniDL4BioPep)
 - [HemoPI2](https://github.com/raghavagps/hemopi2)
 
-## Data
+## Data Processing
 
-Prepared AmpDiff datasets are included under `data/`:
-
-- `data/pretrain/ampdiff_pretrain_all.csv`
-- `data/pretrain/ampdiff_pretrain_motif.csv`
-- `data/finetune/ampdiff_finetune_act.csv`
-- `data/finetune/ampdiff_finetune_bal.csv`
-- `data/test/ampdiff_test_act.csv`
-- `data/test/ampdiff_test_bal.csv`
-
-FASTA versions are provided for the pretrain and test splits where needed. The
-dataset split summary is available in `data/dataset_report.md`.
-
-To rebuild the prepared datasets from the merged raw AMP files:
-
-```bash
-python dataset/prepare_ampdiff_datasets.py
-```
-
-The preparation script reads from `raw dataset/` by default and writes the
-processed outputs to `data/`.
-
-## Pretraining
-
-AmpDiff uses a two-stage pretraining (`stage 1`/`stage 2`) workflow and provides two independent usage paths (`A`/`B`).
-
-### Path A: Raw-data retraining
-
-Use this path when you want to rebuild the processed AMP datasets and train
-both pretraining stages from raw AMP records.
-
-1. Download the [raw data](https://doi.org/10.5281/zenodo.24358304) and place the files under `raw dataset/`.
-2. Build the processed datasets:
+1. Download the [raw dataset](https://doi.org/10.5281/zenodo.24358304) and
+   place the extracted files under `raw dataset/`.
+2. Process the raw AMP records:
 
 ```bash
 python dataset/prepare_ampdiff_datasets.py \
@@ -112,13 +83,31 @@ python dataset/prepare_ampdiff_datasets.py \
   --motif-dir data/motif
 ```
 
-3. Run `stage 1` on the broad AMP pretraining set:
+The processed datasets are written to:
+
+- `data/pretrain/`: datasets for the two pretraining stages
+- `data/finetune/`: supervised datasets for `act` and `bal` finetuning
+- `data/test/`: held-out datasets for sampling and evaluation
+
+FASTA versions are provided for the pretrain and test splits where needed. The
+dataset split summary is available in `data/dataset_report.md`.
+
+## Pretraining
+
+AmpDiff uses a two-stage pretraining (`stage 1`/`stage 2`) workflow and provides two independent usage paths (`A`/`B`).
+
+### Path A: Retraining
+
+Use this path to retrain both pretraining stages from the processed datasets
+under `data/pretrain/`. Complete the Data Processing workflow above first.
+
+1. Run `stage 1` on the broad AMP pretraining set:
 
 ```bash
 bash amp_scripts/run_pretrain_stage1_all.sh
 ```
 
-4. Run `stage 2`, which initializes from the stage 1 checkpoint and trains on
+2. Run `stage 2`, which initializes from the stage 1 checkpoint and trains on
    the active-motif subset:
 
 ```bash
@@ -127,26 +116,8 @@ bash amp_scripts/run_pretrain_stage2_motif.sh
 
 The two stages write their canonical checkpoints to:
 
-- `checkpoints/pretrain/stage1_all.pt`
-- `checkpoints/pretrain/stage2_motif.pt`
-
-You can also run `amp_scripts/amp_train.py` directly:
-
-```bash
-python amp_scripts/amp_train.py \
-  --data_path data/pretrain/ampdiff_pretrain_motif.csv \
-  --config_path configs/amp_pretrain_stage2_motif.yml \
-  --log_path logs/amp_pretrain \
-  --train_loss fr \
-  --motif_type prosite,regular,merci \
-  --mode act \
-  --scorer none \
-  --require_active_motif True \
-  --min_optimizable 1 \
-  --init_checkpoint checkpoints/pretrain/stage1_all.pt \
-  --ckpt_subdir pretrain \
-  --ckpt_name stage2_motif.pt
-```
+- `checkpoints/pretrain/pretrain_stage1.pt`
+- `checkpoints/pretrain/pretrain_stage2.pt`
 
 ### Path B: Warm-start from checkpoints
 
@@ -157,62 +128,42 @@ weights.
 2. Place the checkpoint files at:
 
 ```text
-checkpoints/pretrain/stage1_all.pt
-checkpoints/pretrain/stage2_motif.pt
+checkpoints/pretrain/pretrain_stage1.pt
+checkpoints/pretrain/pretrain_stage2.pt
 ```
 
 After completing either Path A or Path B, continue to finetuning with
-`checkpoints/pretrain/stage2_motif.pt`.
+`checkpoints/pretrain/pretrain_stage2.pt`.
 
 ## Finetuning
 
-Finetuning uses supervised AMP activity data and one selectable activity
-guidance predictor. Supported activity guidance predictors are:
+Finetuning uses supervised AMP activity data and selectable activity
+guidance predictors.
 
-- [PepNet](https://github.com/Harkool/PepNet)
-- [AMPpred-MFA](https://github.com/Jiangle525/AMPpred-MFA)
-- [iAMP-Attenpred](https://github.com/xingwxzz/iAMP-Attenpred)
-- [UniDL4BioPep](https://github.com/dzjxzyd/UniDL4BioPep)
+### Path A: Re-finetuning
 
-Optional hemolysis guidance is provided by:
+Use this path to finetune the `act` and `bal` models again with the processed
+datasets under `data/finetune/`. Complete either pretraining path first so that
+`checkpoints/pretrain/pretrain_stage2.pt` is available.
 
-- [HemoPI2](https://github.com/raghavagps/hemopi2)
-
-### Path A: Raw-data retraining
-
-Use this path when you want to build the supervised finetuning datasets and
-train the `act` and `bal` models. Complete either pretraining path first so
-that `checkpoints/pretrain/stage2_motif.pt` is available.
-
-1. Download the [raw data](https://doi.org/10.5281/zenodo.24358304) and place the files under `raw dataset/`.
-2. Build the processed datasets if they have not already been prepared:
-
-```bash
-python dataset/prepare_ampdiff_datasets.py \
-  --raw-dir "raw dataset" \
-  --out-dir data \
-  --work-dir dataset/work \
-  --motif-dir data/motif
-```
-
-3. Finetune the `act` model:
+1. Re-finetune the `act` model:
 
 ```bash
 python amp_scripts/amp_finetune.py \
   --data_path data/finetune/ampdiff_finetune_act.csv \
   --config_path configs/amp_finetune.yml \
-  --pretrain_ckpt checkpoints/pretrain/stage2_motif.pt \
+  --pretrain_ckpt checkpoints/pretrain/pretrain_stage2.pt \
   --guidance_scorer pepnet \
   --mode act
 ```
 
-4. Finetune the `bal` model with optional hemolysis guidance:
+2. Re-finetune the `bal` model with optional hemolysis guidance:
 
 ```bash
 python amp_scripts/amp_finetune.py \
   --data_path data/finetune/ampdiff_finetune_bal.csv \
   --config_path configs/amp_finetune.yml \
-  --pretrain_ckpt checkpoints/pretrain/stage2_motif.pt \
+  --pretrain_ckpt checkpoints/pretrain/pretrain_stage2.pt \
   --guidance_scorer pepnet \
   --mode bal \
   --hemolysis-guidance

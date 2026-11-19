@@ -35,7 +35,7 @@ Fine-tuning uses the same selection parameter:
 python amp_scripts/amp_finetune.py \
   --data_path data/finetune/finetune.csv \
   --config_path configs/amp_finetune.yml \
-  --pretrain_ckpt checkpoints/pretrain/stage1_all.pt \
+  --pretrain_ckpt checkpoints/pretrain/pretrain_stage1.pt \
   --guidance_scorer iamp_attenpred \
   --mode act
 ```

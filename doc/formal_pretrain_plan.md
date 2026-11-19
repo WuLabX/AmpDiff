@@ -41,7 +41,7 @@ bash amp_scripts/run_pretrain_stage1_all.sh
 Canonical best checkpoint:
 
 ```text
-checkpoints/pretrain/stage1_all.pt
+checkpoints/pretrain/pretrain_stage1.pt
 ```
 
 TensorBoard:
@@ -68,13 +68,13 @@ Primary curves to watch:
 Start from the best Stage 1 checkpoint:
 
 ```bash
-bash amp_scripts/run_pretrain_stage2_motif.sh checkpoints/pretrain/stage1_all.pt
+bash amp_scripts/run_pretrain_stage2_motif.sh checkpoints/pretrain/pretrain_stage1.pt
 ```
 
 Canonical best checkpoint:
 
 ```text
-checkpoints/pretrain/stage2_motif.pt
+checkpoints/pretrain/pretrain_stage2.pt
 ```
 
 For Stage 2, `train/no_motif_fraction` should stay at 0.0 because the dataset is explicitly motif-conditioned.

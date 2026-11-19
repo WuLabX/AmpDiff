@@ -12,7 +12,7 @@ SAMPLE=amp_scripts/amp_sample.py
 ACT_FASTA=data/test/ampdiff_test_act.fasta
 BAL_FASTA=data/test/ampdiff_test_bal.fasta
 
-PRETRAIN_CKPT=checkpoints/pretrain/stage2_motif.pt
+PRETRAIN_CKPT=checkpoints/pretrain/pretrain_stage2.pt
 ACT_CKPT=checkpoints/act/act.pt
 BAL_CKPT=checkpoints/bal/bal.pt
 

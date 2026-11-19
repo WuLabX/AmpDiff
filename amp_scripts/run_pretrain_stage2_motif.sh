@@ -3,7 +3,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-PRETRAIN_CKPT="${1:-checkpoints/pretrain/stage1_all.pt}"
+PRETRAIN_CKPT="${1:-checkpoints/pretrain/pretrain_stage1.pt}"
 
 python amp_scripts/amp_train.py \
   --data_path data/pretrain/ampdiff_pretrain_motif.csv \
@@ -17,4 +17,4 @@ python amp_scripts/amp_train.py \
   --min_optimizable 1 \
   --init_checkpoint "$PRETRAIN_CKPT" \
   --ckpt_subdir pretrain \
-  --ckpt_name stage2_motif.pt
+  --ckpt_name pretrain_stage2.pt

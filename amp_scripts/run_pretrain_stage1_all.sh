@@ -14,4 +14,4 @@ python amp_scripts/amp_train.py \
   --require_active_motif False \
   --min_optimizable 1 \
   --ckpt_subdir pretrain \
-  --ckpt_name stage1_all.pt
+  --ckpt_name pretrain_stage1.pt
