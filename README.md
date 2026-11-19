@@ -62,20 +62,41 @@ processed outputs to `data/`.
 
 AmpDiff uses a two-stage pretraining workflow.
 
-Stage 1 trains on the broad AMP pretraining set:
+Resources:
+
+- Raw data (download link to be added)
+- Pretraining checkpoints (download link to be added)
+
+### Path A: Raw-data retraining
+
+Use this path when you want to rebuild the processed AMP datasets and train
+both pretraining stages from raw AMP records.
+
+1. Download the raw data and place the files under `raw dataset/`.
+2. Build the processed datasets:
+
+```bash
+python dataset/prepare_ampdiff_datasets.py \
+  --raw-dir "raw dataset" \
+  --out-dir data \
+  --work-dir dataset/work \
+  --motif-dir data/motif
+```
+
+3. Run stage 1 on the broad AMP pretraining set:
 
 ```bash
 bash amp_scripts/run_pretrain_stage1_all.sh
 ```
 
-Stage 2 initializes from the stage 1 checkpoint and trains on the active-motif
-subset:
+4. Run stage 2, which initializes from the stage 1 checkpoint and trains on
+   the active-motif subset:
 
 ```bash
 bash amp_scripts/run_pretrain_stage2_motif.sh
 ```
 
-The canonical checkpoints are written to:
+The two stages write their canonical checkpoints to:
 
 - `checkpoints/pretrain/stage1_all.pt`
 - `checkpoints/pretrain/stage2_motif.pt`
@@ -98,6 +119,22 @@ python amp_scripts/amp_train.py \
   --ckpt_name stage2_motif.pt
 ```
 
+### Path B: Warm-start from checkpoints
+
+Use this path when you want to skip pretraining and start from released
+weights.
+
+1. Download the pretraining checkpoints (download link to be added).
+2. Place the checkpoint files at:
+
+```text
+checkpoints/pretrain/stage1_all.pt
+checkpoints/pretrain/stage2_motif.pt
+```
+
+After completing either Path A or Path B, continue to finetuning with
+`checkpoints/pretrain/stage2_motif.pt`.
+
 ## Finetuning
 
 Finetuning uses supervised AMP activity data and one selectable activity
@@ -112,7 +149,29 @@ Optional hemolysis guidance is provided by:
 
 - [HemoPI2](https://github.com/raghavagps/hemopi2)
 
-Finetune the `act` model:
+Resources:
+
+- Raw data (download link to be added)
+- Finetuned checkpoints (download link to be added)
+
+### Path A: Raw-data retraining
+
+Use this path when you want to build the supervised finetuning datasets and
+train the `act` and `bal` models. Complete either pretraining path first so
+that `checkpoints/pretrain/stage2_motif.pt` is available.
+
+1. Download the raw data and place the files under `raw dataset/`.
+2. Build the processed datasets if they have not already been prepared:
+
+```bash
+python dataset/prepare_ampdiff_datasets.py \
+  --raw-dir "raw dataset" \
+  --out-dir data \
+  --work-dir dataset/work \
+  --motif-dir data/motif
+```
+
+3. Finetune the `act` model:
 
 ```bash
 python amp_scripts/amp_finetune.py \
@@ -123,7 +182,7 @@ python amp_scripts/amp_finetune.py \
   --mode act
 ```
 
-Finetune the `bal` model with optional hemolysis guidance:
+4. Finetune the `bal` model with optional hemolysis guidance:
 
 ```bash
 python amp_scripts/amp_finetune.py \
@@ -135,10 +194,26 @@ python amp_scripts/amp_finetune.py \
   --hemolysis-guidance
 ```
 
-Canonical finetuned checkpoints are written to:
+The canonical finetuned checkpoints are written to:
 
 - `checkpoints/act/act.pt`
 - `checkpoints/bal/bal.pt`
+
+### Path B: Warm-start from checkpoints
+
+Use this path when you want to skip finetuning and directly run sampling or
+evaluation from released weights.
+
+1. Download the finetuned checkpoints (download link to be added).
+2. Place the checkpoint files at:
+
+```text
+checkpoints/act/act.pt
+checkpoints/bal/bal.pt
+```
+
+After completing either Path A or Path B, continue to the sampling workflow
+below.
 
 ## Sampling
 
@@ -243,3 +318,10 @@ corresponding AmpDiff manuscript when available.
   year = {2026}
 }
 ```
+
+## Contact
+
+If you have any questions or suggestions regarding this work, please feel free to contact us:
+
+- Zhenyu Yue: [zhenyuyue@ahau.edu.cn](mailto:zhenyuyue@ahau.edu.cn)
+- Chuya Wu: [wuchuya@stu.ahau.edu.cn](mailto:wuchuya@stu.ahau.edu.cn)
