@@ -1,13 +1,14 @@
 # AmpDiff
 
-AmpDiff is a motif-guided diffusion framework for antimicrobial peptide (AMP)
-sequence optimization. It supports AMP pretraining, activity-guided finetuning,
-motif-constrained sampling, and downstream evaluation with AMP activity and
-hemolysis predictors.
+AmpDiff: Function-aware autoregressive diffusion enables safe and efficient
+antimicrobial peptide optimization. It supports AMP pretraining,
+activity-guided finetuning, motif-constrained sampling, and downstream
+evaluation with AMP activity and hemolysis predictors.
 
 The project is organized around two generation modes:
 
-- `act`: fixes active AMP motifs and optimizes the remaining positions.
+- `act`: fixes active AMP motifs and optimizes the remaining positions, with
+  activity guidance.
 - `bal`: fixes both active motifs and hemolysis-related motifs, with optional
   HemoPI2 hemolysis guidance.
 
@@ -22,18 +23,51 @@ The project is organized around two generation modes:
 - `evaluation/`: generated variants and downstream analysis outputs.
 - `doc/`: project notes, dataset plans, and guidance documentation.
 
+## Experimental Setup
+
+All experiments were run on Linux servers with NVIDIA A100 GPUs. The sampling
+scripts use the following grid unless otherwise specified:
+
+- Random seeds: `2024`, `2025`, `2026`
+- Sampling temperatures: `0.6`, `1.0`, `1.4`
+
 ## Environment
 
-Create the conda environment from the provided file:
+The codebase was developed with Python 3.9, PyTorch 1.13.0, and CUDA 11.6.
+Create the conda environment with:
 
 ```bash
-conda env create -f environment.yaml
+conda env create -f environment.yaml -n AmpDiff
+conda activate AmpDiff
 ```
+
+The environment file installs the main conda and pip dependencies.
 
 Activate the created environment before running the commands below. If your
 local scorer paths differ from the defaults, pass the corresponding
 `--pepnet_root`, `--hemopi2_root`, `--amppred_root`, `--iamp_root`, or
 `--unidl_root` arguments.
+
+Install optional external predictors in the top-level directory (sibling to
+the `AmpDiff` folder) when using predictor-guided AMP evaluation:
+
+```text
+parent-directory/
+├── AmpDiff/
+├── PepNet/
+├── AMPpred-MFA/
+├── iAMP-Attenpred/
+├── UniDL4BioPep/
+└── hemopi2/
+```
+
+Predictor repositories:
+
+- [PepNet](https://github.com/Harkool/PepNet)
+- [AMPpred-MFA](https://github.com/Jiangle525/AMPpred-MFA)
+- [iAMP-Attenpred](https://github.com/xingwxzz/iAMP-Attenpred)
+- [UniDL4BioPep](https://github.com/dzjxzyd/UniDL4BioPep)
+- [HemoPI2](https://github.com/raghavagps/hemopi2)
 
 ## Data
 
