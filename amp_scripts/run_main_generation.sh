@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /mnt/wucy/WUCHUYA/AmpDiff
+cd "$(dirname "$0")/.."
 
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 export TORCH_DISABLE_DYNAMO=1
 
-PY=/mnt/wucy/miniconda3/envs/Hudiff/bin/python
+PY="${PYTHON:-python}"
 SAMPLE=amp_scripts/amp_sample.py
 
 ACT_FASTA=data/test/ampdiff_test_act.fasta

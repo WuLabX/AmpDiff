@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 PRETRAIN_CKPT="${1:-checkpoints/pretrain/pretrain_stage1.pt}"
 
 python amp_scripts/amp_train.py \
-  --data_path data/pretrain/ampdiff_pretrain_motif.csv \
+  --data_path data/pretrain/ampdiff_pretrain_stage2.csv \
   --config_path configs/amp_pretrain_stage2_motif.yml \
   --log_path logs/amp_pretrain \
   --train_loss fr \

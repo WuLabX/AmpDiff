@@ -6,7 +6,7 @@ Design notes:
 - Pretraining follows HuDiff-Nb's unsupervised denoising setup: sequence only.
 - Finetuning uses high-confidence experimental activity records aggregated per sequence.
 - Test sequences are held out at a CD-HIT cluster level to reduce similarity leakage.
-- Outputs are written next to existing project data without overwriting legacy files.
+- Initial split outputs are written to a work directory before similarity filtering.
 """
 
 from __future__ import annotations
@@ -28,6 +28,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
 
+ROOT = Path(__file__).resolve().parents[1]
 VALID_AA = set("ACDEFGHIKLMNPQRSTVWY")
 
 AA_MASS = {
@@ -511,15 +512,15 @@ def summarize_task(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--raw-dir", default="/mnt/wucy/WUCHUYA/AmpDiff/raw dataset")
-    parser.add_argument("--out-dir", default="/mnt/wucy/WUCHUYA/AmpDiff/data")
-    parser.add_argument("--work-dir", default="/mnt/wucy/WUCHUYA/AmpDiff/dataset/work")
+    parser.add_argument("--raw-dir", default=str(ROOT / "raw dataset"))
+    parser.add_argument("--out-dir", default=str(ROOT / "dataset" / "work" / "prepared"))
+    parser.add_argument("--work-dir", default=str(ROOT / "dataset" / "work" / "split"))
     parser.add_argument("--min-len", type=int, default=5)
     parser.add_argument("--max-len", type=int, default=100)
     parser.add_argument("--identity", type=float, default=0.8)
     parser.add_argument("--test-frac", type=float, default=0.10)
     parser.add_argument("--seed", type=int, default=2026)
-    parser.add_argument("--motif-dir", default="/mnt/wucy/WUCHUYA/AmpDiff/data/motif")
+    parser.add_argument("--motif-dir", default=str(ROOT / "data" / "motif"))
     parser.add_argument("--motif-type", default="prosite,regular,merci")
     args = parser.parse_args()
 
@@ -604,11 +605,10 @@ def main() -> None:
 
     finetune_fields = list(asdict(next(iter(activity.values()))).keys()) if activity else ["sequence", "value"]
     outputs = {
-        "pretrain_all": out_dir / "pretrain" / "ampdiff_pretrain_all.csv",
-        "pretrain": out_dir / "pretrain" / "ampdiff_pretrain.csv",
-        "pretrain_fasta": out_dir / "pretrain" / "ampdiff_pretrain.fasta",
-        "pretrain_motif": out_dir / "pretrain" / "ampdiff_pretrain_motif.csv",
-        "pretrain_motif_fasta": out_dir / "pretrain" / "ampdiff_pretrain_motif.fasta",
+        "pretrain_stage1": out_dir / "pretrain" / "ampdiff_pretrain_stage1.csv",
+        "pretrain_stage1_fasta": out_dir / "pretrain" / "ampdiff_pretrain_stage1.fasta",
+        "pretrain_stage2": out_dir / "pretrain" / "ampdiff_pretrain_stage2.csv",
+        "pretrain_stage2_fasta": out_dir / "pretrain" / "ampdiff_pretrain_stage2.fasta",
         "finetune_act": out_dir / "finetune" / "ampdiff_finetune_act.csv",
         "finetune_bal": out_dir / "finetune" / "ampdiff_finetune_bal.csv",
         "test_act": out_dir / "test" / "ampdiff_test_act.csv",
@@ -619,11 +619,10 @@ def main() -> None:
         "report_md": out_dir / "dataset_report.md",
     }
 
-    write_csv(outputs["pretrain_all"], ({"sequence": seq} for seq in pretrain_all), ["sequence"])
-    write_csv(outputs["pretrain"], ({"sequence": seq} for seq in pretrain_all), ["sequence"])
-    write_fasta(pretrain_all, outputs["pretrain_fasta"])
-    write_csv(outputs["pretrain_motif"], ({"sequence": seq} for seq in pretrain_motif), ["sequence"])
-    write_fasta(pretrain_motif, outputs["pretrain_motif_fasta"])
+    write_csv(outputs["pretrain_stage1"], ({"sequence": seq} for seq in pretrain_all), ["sequence"])
+    write_fasta(pretrain_all, outputs["pretrain_stage1_fasta"])
+    write_csv(outputs["pretrain_stage2"], ({"sequence": seq} for seq in pretrain_motif), ["sequence"])
+    write_fasta(pretrain_motif, outputs["pretrain_stage2_fasta"])
     write_csv(outputs["finetune_act"], (asdict(activity[seq]) for seq in finetune_act), finetune_fields)
     write_csv(outputs["finetune_bal"], (asdict(activity[seq]) for seq in finetune_bal), finetune_fields)
     write_csv(outputs["test_act"], (asdict(activity[seq]) for seq in test_act), finetune_fields)
@@ -632,8 +631,8 @@ def main() -> None:
     write_fasta(test_bal, outputs["test_bal_fasta"])
 
     split_clusters = {
-        "pretrain_all": {seq_to_cluster[s] for s in pretrain_all},
-        "pretrain_motif": {seq_to_cluster[s] for s in pretrain_motif},
+        "pretrain_stage1": {seq_to_cluster[s] for s in pretrain_all},
+        "pretrain_stage2": {seq_to_cluster[s] for s in pretrain_motif},
         "finetune_act": {seq_to_cluster[s] for s in finetune_act},
         "finetune_bal": {seq_to_cluster[s] for s in finetune_bal},
         "test_act": {seq_to_cluster[s] for s in test_act},
@@ -642,8 +641,8 @@ def main() -> None:
     report = {
         "parameters": vars(args),
         "policy": {
-            "pretrain": "broad AMP-like sequence-only pool; no active-motif requirement",
-            "pretrain_motif": "active motif hit and >=1 optimizable residue",
+            "pretrain_stage1": "broad AMP-like sequence-only pool; no active-motif requirement",
+            "pretrain_stage2": "active motif hit and >=1 optimizable residue",
             "finetune_act": "activity-supervised; active motif hit and >=1 optimizable residue",
             "finetune_bal": "activity-supervised; active motif + hom_neg motif hits; known hemolysis; >=1 optimizable residue",
             "test_act": "held-out act-valid clusters",
@@ -664,8 +663,8 @@ def main() -> None:
         },
         "outputs": {key: str(value) for key, value in outputs.items()},
         "splits": {
-            "pretrain_all": summarize_task(pretrain_all, activity, active_exact, active_prosite, hom_neg_motifs),
-            "pretrain_motif": summarize_task(pretrain_motif, activity, active_exact, active_prosite, hom_neg_motifs),
+            "pretrain_stage1": summarize_task(pretrain_all, activity, active_exact, active_prosite, hom_neg_motifs),
+            "pretrain_stage2": summarize_task(pretrain_motif, activity, active_exact, active_prosite, hom_neg_motifs),
             "finetune_act": summarize_task(finetune_act, activity, active_exact, active_prosite, hom_neg_motifs),
             "finetune_bal": summarize_task(finetune_bal, activity, active_exact, active_prosite, hom_neg_motifs),
             "test_act": summarize_task(test_act, activity, active_exact, active_prosite, hom_neg_motifs),
@@ -675,8 +674,8 @@ def main() -> None:
             "identity": args.identity,
             "test_act_vs_finetune_act_overlap": len(split_clusters["test_act"] & split_clusters["finetune_act"]),
             "test_bal_vs_finetune_bal_overlap": len(split_clusters["test_bal"] & split_clusters["finetune_bal"]),
-            "test_act_vs_pretrain_overlap": len(split_clusters["test_act"] & split_clusters["pretrain_all"]),
-            "test_bal_vs_pretrain_overlap": len(split_clusters["test_bal"] & split_clusters["pretrain_all"]),
+            "test_act_vs_pretrain_overlap": len(split_clusters["test_act"] & split_clusters["pretrain_stage1"]),
+            "test_bal_vs_pretrain_overlap": len(split_clusters["test_bal"] & split_clusters["pretrain_stage1"]),
             "test_act_clusters": len(test_act_clusters),
             "test_bal_clusters": len(test_bal_clusters),
             "heldout_cluster_union": len(heldout_clusters),
@@ -692,8 +691,8 @@ def main() -> None:
         "",
         "## Split policy",
         f"- Valid peptide length: {args.min_len}-{args.max_len} aa; standard 20 amino acids only.",
-        "- Pretrain keeps broad AMP-like sequences and does not require active motif hits.",
-        "- Pretrain motif stage requires active motif hits and at least one optimizable residue.",
+        "- Pretrain stage 1 keeps broad AMP-like sequences and does not require active motif hits.",
+        "- Pretrain stage 2 requires active motif hits and at least one optimizable residue.",
         "- finetune_act/test_act require active motif hits and at least one optimizable residue.",
         "- finetune_bal/test_bal require active motif + hom_neg motif hits, known hemolysis labels, and at least one optimizable residue.",
         f"- CD-HIT cluster holdout identity: {args.identity}.",
@@ -704,8 +703,8 @@ def main() -> None:
         f"- act candidates: {len(act_candidates)}",
         f"- act test candidates with known hemolysis: {len(act_test_candidates)}",
         f"- bal candidates: {len(bal_candidates)}",
-        f"- pretrain_all: {len(pretrain_all)}",
-        f"- pretrain_motif: {len(pretrain_motif)}",
+        f"- pretrain_stage1: {len(pretrain_all)}",
+        f"- pretrain_stage2: {len(pretrain_motif)}",
         f"- finetune_act: {len(finetune_act)}",
         f"- finetune_bal: {len(finetune_bal)}",
         f"- test_act: {len(test_act)}",
@@ -724,8 +723,8 @@ def main() -> None:
     outputs["report_md"].write_text("\n".join(md) + "\n", encoding="utf-8")
 
     print(json.dumps({
-        "pretrain_all": len(pretrain_all),
-        "pretrain_motif": len(pretrain_motif),
+        "pretrain_stage1": len(pretrain_all),
+        "pretrain_stage2": len(pretrain_motif),
         "finetune_act": len(finetune_act),
         "finetune_bal": len(finetune_bal),
         "test_act": len(test_act),

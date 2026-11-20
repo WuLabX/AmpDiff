@@ -1,136 +1,143 @@
 # AmpDiff Dataset Report
 
-## Split policy
+This report audits the datasets currently published under `data/`.
+
+## Processing policy
+
 - Valid peptide length: 5-100 aa; standard 20 amino acids only.
-- Pretrain keeps broad AMP-like sequences and does not require active motif hits.
-- Pretrain motif stage requires active motif hits and at least one optimizable residue.
-- finetune_act/test_act require active motif hits and at least one optimizable residue.
-- finetune_bal/test_bal require active motif + hom_neg motif hits, known hemolysis labels, and at least one optimizable residue.
-- CD-HIT cluster holdout identity: 0.8.
+- Initial train/test split uses CD-HIT clusters at 0.8 identity.
+- Training sets use CD-HIT at 0.9 identity for internal deduplication.
+- Training sets are filtered against the test union with CD-HIT-2D at 0.6 identity.
 
-## Counts
-- Raw valid master sequences: 69011
-- Activity-supervised sequences: 8035
-- act candidates: 3650
-- act test candidates with known hemolysis: 2467
-- bal candidates: 236
-- pretrain_all: 57305
-- pretrain_motif: 18536
-- finetune_act: 3351
-- finetune_bal: 208
-- test_act: 247
-- test_bal: 28
+## Published files
 
-## Split summaries
+| Dataset | Rows | CSV | FASTA |
+| --- | ---: | --- | --- |
+| `pretrain_stage1` | 26057 | `data/pretrain/ampdiff_pretrain_stage1.csv` | `data/pretrain/ampdiff_pretrain_stage1.fasta` |
+| `pretrain_stage2` | 8398 | `data/pretrain/ampdiff_pretrain_stage2.csv` | `data/pretrain/ampdiff_pretrain_stage2.fasta` |
+| `finetune_act` | 1294 | `data/finetune/ampdiff_finetune_act.csv` | `data/finetune/ampdiff_finetune_act.fasta` |
+| `finetune_bal` | 64 | `data/finetune/ampdiff_finetune_bal.csv` | `data/finetune/ampdiff_finetune_bal.fasta` |
+| `test_act` | 247 | `data/test/ampdiff_test_act.csv` | `data/test/ampdiff_test_act.fasta` |
+| `test_bal` | 28 | `data/test/ampdiff_test_bal.csv` | `data/test/ampdiff_test_bal.fasta` |
+
+All CSV/FASTA pairs contain the same sequences in the same order. No published dataset contains duplicate sequences.
+
+## Sequence relationships
+
 ```json
 {
-  "pretrain_all": {
+  "pretrain_stage1_vs_pretrain_stage2_exact_overlap": 8200,
+  "finetune_act_vs_finetune_bal_exact_overlap": 61,
+  "test_act_vs_test_bal_exact_overlap": 6,
+  "pretrain_stage1_vs_test_union_exact_overlap": 0,
+  "pretrain_stage2_vs_test_union_exact_overlap": 0,
+  "finetune_act_vs_test_union_exact_overlap": 0,
+  "finetune_bal_vs_test_union_exact_overlap": 0
+}
+```
+
+## Split summaries
+
+```json
+{
+  "pretrain_stage1": {
     "length": {
-      "n": 57305,
-      "min": 5,
-      "p25": 13,
+      "n": 26057,
+      "min": 11,
+      "p25": 18,
       "median": 21,
-      "p75": 51,
-      "p95": 88,
+      "p75": 63,
+      "p95": 91,
       "max": 100
     },
     "motif": {
-      "n": 57305,
-      "seq_with_active_motif": 18867,
-      "seq_without_active_motif": 38438,
-      "seq_with_hom_neg_motif": 1152,
-      "active_positions_total": 150093,
-      "hom_neg_positions_total": 8376,
-      "bal_fixed_positions_total": 156314,
+      "n": 26057,
+      "seq_with_active_motif": 8267,
+      "seq_without_active_motif": 17790,
+      "seq_with_hom_neg_motif": 412,
+      "active_positions_total": 54994,
+      "hom_neg_positions_total": 2940,
+      "bal_fixed_positions_total": 57147,
       "active_fixed_fraction": {
         "p25": 0.0,
         "median": 0.0,
-        "p75": 0.07317073170731707,
-        "p95": 0.5142857142857142,
+        "p75": 0.05263157894736842,
+        "p95": 0.3333333333333333,
         "max": 1.0
       },
       "bal_fixed_fraction": {
         "p25": 0.0,
         "median": 0.0,
-        "p75": 0.08333333333333333,
-        "p95": 0.5454545454545454,
+        "p75": 0.05714285714285714,
+        "p95": 0.35714285714285715,
         "max": 1.0
       },
       "optimizable_act_positions": {
         "min": 0,
-        "p25": 12,
+        "p25": 17,
         "median": 20,
-        "p75": 47,
-        "p95": 85,
+        "p75": 58,
+        "p95": 88,
         "max": 100
       },
       "optimizable_bal_positions": {
         "min": 0,
-        "p25": 12,
+        "p25": 16,
         "median": 20,
-        "p75": 47,
-        "p95": 85,
+        "p75": 58,
+        "p95": 88,
         "max": 100
       }
     },
-    "hemolysis_summary": {
-      "mixed": 1612,
-      "unknown": 1190,
-      "hemolytic": 1501
-    },
-    "combo_class": {
-      "continuous__mixed": 530,
-      "continuous__unknown": 1190,
-      "continuous__continuous": 2470,
-      "continuous__hemolytic": 113
-    }
+    "hemolysis_summary": {},
+    "combo_class": {}
   },
-  "pretrain_motif": {
+  "pretrain_stage2": {
     "length": {
-      "n": 18536,
-      "min": 5,
-      "p25": 18,
-      "median": 37,
-      "p75": 71,
-      "p95": 93,
+      "n": 8398,
+      "min": 11,
+      "p25": 20,
+      "median": 49,
+      "p75": 76,
+      "p95": 95,
       "max": 100
     },
     "motif": {
-      "n": 18536,
-      "seq_with_active_motif": 18536,
+      "n": 8398,
+      "seq_with_active_motif": 8398,
       "seq_without_active_motif": 0,
-      "seq_with_hom_neg_motif": 538,
-      "active_positions_total": 144743,
-      "hom_neg_positions_total": 3930,
-      "bal_fixed_positions_total": 146528,
+      "seq_with_hom_neg_motif": 231,
+      "active_positions_total": 55196,
+      "hom_neg_positions_total": 1607,
+      "bal_fixed_positions_total": 55997,
       "active_fixed_fraction": {
-        "p25": 0.07462686567164178,
-        "median": 0.18181818181818182,
-        "p75": 0.36363636363636365,
-        "p95": 0.75,
-        "max": 0.9736842105263158
+        "p25": 0.05970149253731343,
+        "median": 0.14035087719298245,
+        "p75": 0.25,
+        "p95": 0.5333333333333333,
+        "max": 0.972972972972973
       },
       "bal_fixed_fraction": {
-        "p25": 0.075,
-        "median": 0.18518518518518517,
-        "p75": 0.375,
-        "p95": 0.7647058823529411,
+        "p25": 0.06,
+        "median": 0.14285714285714285,
+        "p75": 0.25,
+        "p95": 0.546875,
         "max": 1.0
       },
       "optimizable_act_positions": {
         "min": 1,
-        "p25": 10,
-        "median": 28,
-        "p75": 62,
-        "p95": 87,
+        "p25": 16,
+        "median": 39,
+        "p75": 70,
+        "p95": 90,
         "max": 97
       },
       "optimizable_bal_positions": {
         "min": 0,
-        "p25": 10,
-        "median": 28,
-        "p75": 62,
-        "p95": 87,
+        "p25": 16,
+        "median": 39,
+        "p75": 70,
+        "p95": 90,
         "max": 97
       }
     },
@@ -139,122 +146,122 @@
   },
   "finetune_act": {
     "length": {
-      "n": 3351,
-      "min": 5,
-      "p25": 13,
-      "median": 18,
-      "p75": 25,
-      "p95": 44,
+      "n": 1294,
+      "min": 11,
+      "p25": 15,
+      "median": 20,
+      "p75": 30,
+      "p95": 49,
       "max": 100
     },
     "motif": {
-      "n": 3351,
-      "seq_with_active_motif": 3351,
+      "n": 1294,
+      "seq_with_active_motif": 1294,
       "seq_without_active_motif": 0,
-      "seq_with_hom_neg_motif": 230,
-      "active_positions_total": 28558,
-      "hom_neg_positions_total": 2244,
-      "bal_fixed_positions_total": 29642,
+      "seq_with_hom_neg_motif": 76,
+      "active_positions_total": 9704,
+      "hom_neg_positions_total": 563,
+      "bal_fixed_positions_total": 9980,
       "active_fixed_fraction": {
-        "p25": 0.23076923076923078,
-        "median": 0.4166666666666667,
-        "p75": 0.6666666666666666,
-        "p95": 0.918918918918919,
+        "p25": 0.17391304347826086,
+        "median": 0.2857142857142857,
+        "p75": 0.4666666666666667,
+        "p95": 0.8181818181818182,
         "max": 0.9791666666666666
       },
       "bal_fixed_fraction": {
-        "p25": 0.25,
-        "median": 0.4444444444444444,
-        "p75": 0.6923076923076923,
-        "p95": 0.9285714285714286,
-        "max": 1.0
+        "p25": 0.18181818181818182,
+        "median": 0.3,
+        "p75": 0.5,
+        "p95": 0.8333333333333334,
+        "max": 0.9791666666666666
       },
       "optimizable_act_positions": {
         "min": 1,
-        "p25": 5,
-        "median": 9,
-        "p75": 16,
-        "p95": 37,
+        "p25": 9,
+        "median": 13,
+        "p75": 21,
+        "p95": 43,
         "max": 95
       },
       "optimizable_bal_positions": {
-        "min": 0,
-        "p25": 4,
-        "median": 8,
-        "p75": 16,
-        "p95": 37,
+        "min": 1,
+        "p25": 8,
+        "median": 13,
+        "p75": 21,
+        "p95": 43,
         "max": 95
       }
     },
     "hemolysis_summary": {
-      "mixed": 1061,
-      "hemolytic": 1159,
-      "unknown": 1131
+      "unknown": 392,
+      "hemolytic": 449,
+      "mixed": 453
     },
     "combo_class": {
-      "continuous__mixed": 389,
-      "continuous__continuous": 1797,
-      "continuous__unknown": 1131,
-      "continuous__hemolytic": 34
+      "continuous__unknown": 392,
+      "continuous__continuous": 675,
+      "continuous__hemolytic": 18,
+      "continuous__mixed": 209
     }
   },
   "finetune_bal": {
     "length": {
-      "n": 208,
-      "min": 7,
-      "p25": 13,
-      "median": 17,
-      "p75": 25,
-      "p95": 34,
+      "n": 64,
+      "min": 11,
+      "p25": 16,
+      "median": 20,
+      "p75": 26,
+      "p95": 31,
       "max": 42
     },
     "motif": {
-      "n": 208,
-      "seq_with_active_motif": 208,
+      "n": 64,
+      "seq_with_active_motif": 64,
       "seq_without_active_motif": 0,
-      "seq_with_hom_neg_motif": 208,
-      "active_positions_total": 1773,
-      "hom_neg_positions_total": 1871,
-      "bal_fixed_positions_total": 2612,
+      "seq_with_hom_neg_motif": 64,
+      "active_positions_total": 447,
+      "hom_neg_positions_total": 494,
+      "bal_fixed_positions_total": 689,
       "active_fixed_fraction": {
-        "p25": 0.25,
-        "median": 0.375,
-        "p75": 0.5384615384615384,
-        "p95": 0.8571428571428571,
+        "p25": 0.1875,
+        "median": 0.25,
+        "p75": 0.4375,
+        "p95": 0.76,
         "max": 0.9259259259259259
       },
       "bal_fixed_fraction": {
-        "p25": 0.4722222222222222,
-        "median": 0.6875,
-        "p75": 0.8125,
-        "p95": 0.9230769230769231,
-        "max": 0.9565217391304348
+        "p25": 0.3793103448275862,
+        "median": 0.47368421052631576,
+        "p75": 0.6875,
+        "p95": 0.8461538461538461,
+        "max": 0.9473684210526315
       },
       "optimizable_act_positions": {
-        "min": 1,
-        "p25": 7,
-        "median": 9,
-        "p75": 13,
+        "min": 2,
+        "p25": 9,
+        "median": 12,
+        "p75": 20,
         "p95": 25,
         "max": 38
       },
       "optimizable_bal_positions": {
         "min": 1,
-        "p25": 3,
-        "median": 6,
-        "p75": 9,
+        "p25": 5,
+        "median": 9,
+        "p75": 15,
         "p95": 19,
         "max": 37
       }
     },
     "hemolysis_summary": {
-      "mixed": 153,
-      "hemolytic": 55
+      "hemolytic": 21,
+      "mixed": 43
     },
     "combo_class": {
-      "continuous__continuous": 186,
-      "continuous__hemolytic": 3,
-      "continuous__mixed": 19
+      "continuous__hemolytic": 1,
+      "continuous__continuous": 55,
+      "continuous__mixed": 8
     }
   },
   "test_act": {
@@ -373,19 +380,5 @@
       "continuous__continuous": 28
     }
   }
-}
-```
-
-## Similarity summary
-```json
-{
-  "identity": 0.8,
-  "test_act_vs_finetune_act_overlap": 0,
-  "test_bal_vs_finetune_bal_overlap": 0,
-  "test_act_vs_pretrain_overlap": 0,
-  "test_bal_vs_pretrain_overlap": 0,
-  "test_act_clusters": 144,
-  "test_bal_clusters": 3,
-  "heldout_cluster_union": 146
 }
 ```

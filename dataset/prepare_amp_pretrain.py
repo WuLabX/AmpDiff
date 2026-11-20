@@ -21,8 +21,8 @@ VALID_AA = set("ACDEFGHIKLMNPQRSTVWYX")
 
 def main():
     parser = argparse.ArgumentParser(description="Clean and deduplicate AMP pretraining CSV.")
-    parser.add_argument("--input",   default="data/pretrain/AMP_51345.csv")
-    parser.add_argument("--output",  default="data/pretrain/AMP_51345_clean.csv")
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
     parser.add_argument("--min_len", type=int, default=MIN_LEN)
     parser.add_argument("--max_len", type=int, default=MAX_LEN)
     args = parser.parse_args()

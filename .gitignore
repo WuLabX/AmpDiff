@@ -29,6 +29,7 @@ env/
 # Training cache
 wandb/
 runs/
+dataset/work/
 
 # ========== 屏蔽不需要上传的巨型checkpoint目录（把不提交的pt放这里） ==========
 large_checkpoints/

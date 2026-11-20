@@ -12,6 +12,7 @@ dependencies:
   - pytorch-cuda=11.6
   - python-lmdb
   - abnumber
+  - cd-hit
   - pip:
     - pandas
     - scipy

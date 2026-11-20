@@ -21,7 +21,6 @@ The project is organized around two generation modes:
 - `data/`: prepared AmpDiff pretrain, finetune, test, and motif files.
 - `checkpoints/`: canonical pretrained and finetuned model checkpoints.
 - `evaluation/`: generated variants and downstream analysis outputs.
-- `doc/`: project notes, dataset plans, and guidance documentation.
 
 ## Experimental Setup
 
@@ -73,14 +72,24 @@ Predictor repositories:
 
 1. Download the [raw dataset](https://doi.org/10.5281/zenodo.24358304) and
    place the extracted files under `raw dataset/`.
-2. Process the raw AMP records:
+2. Build the initial splits in a temporary work directory:
 
 ```bash
 python dataset/prepare_ampdiff_datasets.py \
   --raw-dir "raw dataset" \
-  --out-dir data \
-  --work-dir dataset/work \
+  --out-dir dataset/work/prepared \
+  --work-dir dataset/work/split \
   --motif-dir data/motif
+```
+
+3. Apply 90% internal deduplication and filter the training sets against the
+   test union at 60% identity:
+
+```bash
+python dataset/make_cdhit60_train_sets.py \
+  --input-dir dataset/work/prepared \
+  --output-dir data \
+  --work-dir dataset/work/cdhit60
 ```
 
 The processed datasets are written to:
@@ -91,6 +100,12 @@ The processed datasets are written to:
 
 FASTA versions are provided for the pretrain and test splits where needed. The
 dataset split summary is available in `data/dataset_report.md`.
+
+To validate the published files and rebuild both dataset reports, run:
+
+```bash
+python dataset/audit_dataset_release.py
+```
 
 ## Pretraining
 
@@ -276,9 +291,7 @@ Motif sources can be selected with:
 --motif_type prosite,regular,merci
 ```
 
-Use `--motif_type none` to disable motif matching where supported. See
-`doc/activity_guidance.md` for details about guidance scorer selection and
-independent post-generation evaluation.
+Use `--motif_type none` to disable motif matching where supported.
 
 ## Citation
 
